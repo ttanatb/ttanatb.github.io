@@ -60,7 +60,7 @@ body {
   font-weight:400;
   padding:50px;
   background-color: #ecedea;
-  background-image: url("background.png");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
