@@ -3,83 +3,100 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tanat Boozayaangool</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <meta name="viewport" content="width=device-width">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Tanat Boozayaangool</title>
+    
+	
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
     <script type="text/javascript" src="javascripts/jquery.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body bgcolor="#f7f5e6">
-    <header>
-      <div class="subheader right">
-        <span>
-        <a href="https://github.com/ttanatb/">GitHub</a> - <a href="https://twitter.com/ttanatb">Twitter</a> - <a href="https://www.linkedin.com/in/ttanatb">LinkedIn</a> - <a href="resume.pdf">Resume</a>
-        </span>
-      </div>
-      <div class="subheader left"> 
-        <div class="button home"> <a href="#top"> </a> </div>
-        <h1> <a href="#top"> Tanat Boozayaangool </a> </h1> 
-      </div>
-    </header>
-    <div class="wrapper">
-      <section>
-        <div class="offset"> </div>
-        <div class="info">
-          <span> My pic will go here </span>
-          <h1> My name goes here</h1>
-          <h2> My job(?) goes here </h2>
-        </div>
-
-        <!-- I need to name this div something -->
-        <div>
-          <p> 
-            All my projects will go here. <br>
-            Let's use cards because i like cards.
-          </p>
-        </div>
-  <!--       <h3>Current Projects</h3>
-        <p><strong>Blank Canvas</strong>
-        A 2D platformer game created in C# and XNA which features a protagonist trying to restore the vibrancy of a color-deprived world. <br>
-        Status: In Progress</p>
-
-        <p><strong>Project: Force</strong>
-        Inspired by the Star Wars universe, this project combines an Arduino and a glove to create a wireless mouse as an alternative to playing video games in style. <br>
-        Status: In Progress</p>
-
-        <p><strong>Building Relationships</strong>
-        Built on RenPy, Building Relationships is a dating simulator for buildings with a very quirky personality. <br>
-        Status: In Progress</p> -->
-
-        <!-- Name this something -->
-        <div>
-          <p>
-            My art work will be super pretty right here (the featured ones from behance)
-          </p>
-        </div>
-
-        <!-- Name this something Maybe about me -->
-        <div>
-          <h3>About Me</h3>
-          <p> Short description about me as a person </p>
-          <ul>
-            <li><p>Writer at <a href="http://media.egfederation.com/">Electronic Gaming Federation</a></p></li>
-            <li><p>Student at Rochester Institute of Technology, BS in Game Design and Development</p></li>
-          </ul>
-        </div>
-
-      </section>
-
-      <footer>
-        <p> have some copy right stuff because i'm cool AF </p>
-        <p> contact goes here instead </p>
-      </footer>
-      
-    </div>
+  
+  <body data-spy="scroll" data-target=".navbar" data-offset="80">
+	<nav class="navbar navbar-default" data-spy="affix" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#top"> Tanat Boozayaangool </a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active" class="left-button"><a href="#projects"> Projects </a></li>
+				<li class="left-button"><a href="#"> About </a></li>
+				<li class="left-button"><a href="#"> Contact </a>
+				<li><a href="resume.pdf"> Resume </a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row" id="offset">
+	</div>
+	<header class="row">
+		<img class="col-sm-7" src="images/me.jpg" />
+		<div class="col-sm-5" id="title">
+			<h1> Tanat<br/>Boozayaangool<br/><small> Game Developer </small> </h1>
+			<a href="resume.pdf"><button type="button" class="btn btn-primary"> Resume </button> </a>
+		</div>
+	</header>
+	<div class="row" id="project-header">
+		<div class="col-sm-8">
+			<h2 id="header"> Selected Projects </h2>
+		</div>
+		<div class="col-sm-4 align-right" >
+			<button type="button" class="btn btn-primary"> View more on github </button>
+		</div>
+	</div>
+	<div class="row" id="projects">
+		<div class="col-sm-4 align-center">
+			<img src="images/test.png" alt="Image"/>
+			<h3> Title</br><small>Short Description</small></h3>
+			<p> Description</p>
+		</div>
+		<div class="col-sm-4 align-center">
+			<img src="images/test.png" alt="Image"/>
+			<h3> Title</br><small>Short Description</small></h3>
+			<p> Description</p>
+		</div>
+		<div class="col-sm-4 align-center">
+			<img src="images/test.png" alt="Image"/>
+			<h3> Title</br><small>Short Description</small></h3>
+			<p> Description</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<p> img </p>
+		</div>
+		<div class="col-sm-4 align-right">
+			<p> Look at my art </p>
+			<p> button </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<h2>About Me</h2>
+		</div>
+		<img class="col-sm-8 align-right" />
+	</div>
+	<div class="row" id="contact">
+		<div class="col-sm-12">
+			<h2>Contact Me</h2>
+			<p> E-mail, Twitter, LinkedIn </p>
+		</div>
+	</div>
+    <footer class="row">
+		<div class="col-sm-12">
+			<p> have some copy right stuff because i'm cool AF </p>
+		</div>
+    </footer>
     <script src="javascripts/scale.fix.js"></script>
+	<script src="js/bootstrap.min.js"></script>
   </body>
 </html>
