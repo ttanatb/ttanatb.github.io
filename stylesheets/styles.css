@@ -14,6 +14,15 @@ body {
 	font-size: 2em;
 }
 
+#portrait {
+	width: 100%;
+	
+}
+
+header {
+	background-image: url("images/background.png");
+}
+
 @media screen and (min-width: 768px) {
 	.left-button {
 		border-right: 1px solid #CCCCCC;
@@ -30,6 +39,11 @@ body {
 
 #title {
 	text-align: right;
+	margin-top: 10%;
+}
+
+#name {
+	font-size: 300%;
 }
 
 #project-header {
