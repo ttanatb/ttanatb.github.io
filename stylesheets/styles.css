@@ -113,6 +113,11 @@ img, .image {
 	}
 }
 
+@media (max-width: 767px) {
+	nav div .navbar-header .navbar-brand {
+	font-size: 1.2em;
+	}
+
 
 /* CSS FOR THE NAV BAR */
 
