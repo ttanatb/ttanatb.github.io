@@ -1,4 +1,7 @@
 /* GENERAL CSS STUFF */
+nav, #welcome, #welcome h1, #welcome h1 small, #about-me, #projects, #other-works, footer {
+	opacity: 0;
+}
 
 .wrapper {
 	text-align: center;
@@ -7,6 +10,7 @@
 body {
 	padding-top: 50px;
 }
+
 
 .btn-md {
 	padding: 8px 14px;
