@@ -1,85 +1,282 @@
-body {
-	background-color: #F7F5E6;
-}
+/* GENERAL CSS STUFF */
 
-.navbar {
-	padding-left: 5%;
-	padding-right: 5%;
-	min-height: 80px;
-	padding-top: 10px;
-	
-}
-
-.navbar-brand {
-	font-size: 2em;
-}
-
-#portrait {
-	width: 100%;
-	
-}
-
-header {
-	background-image: url("images/background.png");
-}
-
-@media screen and (min-width: 768px) {
-	.left-button {
-		border-right: 1px solid #CCCCCC;
-	}
-	li {
-		min-width: 83px;
-	}
-}
-
-.row {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-#title {
-	text-align: right;
-	margin-top: 10%;
-}
-
-#name {
-	font-size: 300%;
-}
-
-#project-header {
-	background-color: green;
-	padding-top: 15px;
-	
-}
-
-.btn {
-	margin-bottom: 15px;
-}
-
-.affix {
-	top:0;
-	width: 100%;
-	z-index: 9999 !important;
-}
-
-#offset{
-	height:80px;
-}
-
-#header {
-	margin: auto 0;
-}
-
-#projects{
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background-color: #FFFFFF;
-}
-
-.align-right {
-	text-align: right;
-}
-
-.align-center {
+.wrapper {
 	text-align: center;
+}
+
+body {
+	padding-top: 50px;
+}
+
+.btn-md {
+	padding: 8px 14px;
+	font-size:	16px;
+	line-height: 1.3333333;
+}
+
+.right {
+	float: right;
+}
+
+section {
+	padding-top: 1em;
+	padding-bottom: 4em;
+	overflow: hidden;
+}
+
+img, .image {
+	width: 100%;
+}
+
+.title {
+	font-size: 300%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.title span {
+	display: inline-block;
+	position: relative;
+}
+
+.title span:before, .title span:after {
+	content: "";
+	position: absolute;
+	height: 0px;
+	border-bottom: 1px solid black;
+	top: 50%;
+	width: 1000px;
+}
+
+.title span:before {
+	right: 100%;
+	margin-right: 25px;
+}
+
+.title span:after {
+	left: 100%;
+	margin-left: 25px;
+}
+
+.md-up {
+	display: none;
+}
+
+.xs-only {
+	display:none;
+}
+
+@media (min-width: 1200px) {
+	p {
+		font-size: 1.1em;
+	}
+	
+
+}
+
+@media (min-width: 768px) {
+	section {
+		padding-top: 2em;
+		padding-bottom: 5em;
+	}
+	
+	.title {
+		font-size: 400%;
+	}
+	
+	.sm-down {
+		display: none;
+	}
+	
+	.md-up {
+		display: block;
+	}
+}
+
+
+
+@media (max-width: 480px) {
+	.sm-down .btn{
+		display: block;
+	}
+	
+	.xs-only {
+		display: block;
+	}
+	
+	.sm-up {
+		display: none;
+	}
+}
+
+
+/* CSS FOR THE NAV BAR */
+
+/* CSS FOR THE WELCOME SECTION */
+
+#welcome {
+	background-image: url(../media/welcome-xl.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	min-height: 550px;
+}
+
+#welcome .jumbotron {
+	padding: 4em 0px 0px;
+	background-color: inherit;
+	color: white;
+}
+
+#welcome .jumbotron h1 {
+	font-size: 72px;
+	line-height: 64px;
+}
+
+#welcome .jumbotron small {
+	color: #e2e2e2;
+}
+
+@media (max-width: 1199px) {
+	#welcome {
+		/*background-image: url(../media/welcome-lg.png);*/
+		background-size: auto 125%;
+		min-height: 450px;
+	}
+	
+	#welcome .jumbotron h1 {
+		font-size: 68px;
+		line-height: 60px;
+	}
+}
+
+@media (max-width: 991px) {
+	#welcome {
+		/*background-image: url(../media/welcome-md.png);*/
+		min-height: 400px;
+		background-size: auto 120%;
+	}
+}
+
+@media (max-width: 767px) {
+	#welcome {
+		/*background-image: url(../media/welcome-sm.png);*/
+		background-size: 140% auto;
+		min-height: 250px;
+	}
+	
+	#welcome .jumbotron {
+		padding-top: 3em;
+	}
+	
+	#welcome .jumbotron h1 {
+		font-size: 52px;
+		margin: 0;
+		line-height: 48px;
+	}
+}
+
+@media (max-width: 480px) {
+	#welcome {
+		background-size: 150% auto;
+		min-height: 200px;
+	}
+	#welcome .jumbotron h1 {
+		font-size: 34px;
+		line-height: 30px;
+	}
+}
+
+/* CSS FOR THE ABOUT ME SECTION */
+
+#about-me {
+	background-color: #47423c;
+	color: white;
+
+}
+
+#about-me h3 {
+	font-weight: bolder;
+	/*text-align: center;*/
+}
+
+#about-me .btn-lg, #about-me .btn-md {
+	position:relative;
+	top: 1em;
+}
+
+#about-me .btn-md {
+	display: none;
+}
+
+
+
+img {
+	width: 100%;
+}
+
+#about-me img {
+	padding-top: 20px;
+	border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+	#about-me .btn-lg {
+		display:none;
+	}
+	
+	#about-me .btn-md {
+		display: inline;
+	}
+}
+
+@media (max-width: 767px) {
+	#about-me img {
+		width: 45%;
+		margin: 0 22.5%;
+	}
+
+}
+
+@media (max-width: 480px) {
+	#about-me img {
+		width: 60%;	
+		margin: 0 20%;
+	}
+		
+	#about-me .btn-md {
+		display: block;
+	}
+}
+
+/* CSS FOR MY PROEJCTS */
+
+#projects {
+	background-color: #d5dbe5;
+}
+
+#other-works {
+	background-color: #829186;
+	color: white;
+}
+
+#other-works .title span:before, #other-works .title span:after {
+	border-color: white;
+}
+
+#other-works a {
+	margin-top: 20px;
+}
+
+.class {
+	width: 100%;
+	height: 50px;
+}
+
+/* CSS FOR THE FOOTER */
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #222;
+	color: white;
 }
