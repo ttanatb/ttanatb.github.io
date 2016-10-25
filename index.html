@@ -21,230 +21,231 @@
 <![endif]-->
 </head>
 <body>
-	<nav class ="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<span id="top"></span>
+<nav class ="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#top">Tanat Boozayaangool</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+			data-target="#navbar-collapsed">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapsed">
+			<ul class="nav navbar-nav navbar-right">	
+				<li><a href="#about-me">About</a></li>
+				<!--
+				<li><a href="#">Skills & Experience</a></li>
+				
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Physics 2D</a></li>
+					  <li><a href="#">Blank Canvas</a></li>
+					  <li><a href="#">Memes</a></li> 
+					</ul>
+				</li>
+				-->
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#other-works">Other Works</a></li>
+				<!--<li><a href="#">Contact</a></li> -->
+				<li><a target="_blank" href="resume.pdf">R&eacute;sum&eacute;</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<header class="row" id="welcome">
 		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">Tanat Boozayaangool</a>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-				data-target="#navbar-collapsed">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapsed">
-				<ul class="nav navbar-nav navbar-right">	
-					<li class="active"><a href="#">Home</a></li>
-					<!--
-					<li><a href="#">Skills & Experience</a></li>
-					
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
-						<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-						  <li><a href="#">Physics 2D</a></li>
-						  <li><a href="#">Blank Canvas</a></li>
-						  <li><a href="#">Memes</a></li> 
-						</ul>
-					</li>
-					-->
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Other Works</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="resume.pdf">R&eacute;sum&eacute;</a></li>
-				</ul>
+			<div class="col-md-12 jumbotron">
+				<h1>Hey, I'm Tanat<br />
+				<small>Game Developer</small></h1>
 			</div>
 		</div>
-	</nav>
-	<div class="container-fluid">
-		<header class="row" id="welcome">
-			<div class="container">
-				<div class="col-md-12 jumbotron">
-					<h1>Hey, I'm Tanat<br />
-					<small>Game Developer</small></h1>
+	</header>
+	<section class="row" id="about-me">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 wrapper">
+					<img src="media/me.jpg" />
 				</div>
-			</div>
-		</header>
-		<section class="row" id="about-me">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 wrapper">
-						<img src="media/me.jpg" />
-					</div>
-					<div class="col-sm-8">
-						<h3>I'm passionate about making games engaging and impactful</h3>
-						<hr />
-						<p>
-							I'm a student at Rochester Institute of Technology studying game design and development. I have worked
-							primarily with C#, Unity, and MonoGame (the spiritual successor to XNA). I like exploring different gameplay
-							algorithms to create an experience that is both fluid and interactive. I also like to experiment with different
-							design concepts in atempt to evoke a wide range of emotions.
-						</p>
-							
-						<p>
-							Outside of programming, I enjoy learning more about the human complex, either through the rationality
-							defined in game theory or the social interactions examined in social psychology. I also work as a graphic
-							designer to help further understand the emotions that are perceived from different styles and designs.
-						</p>
-						<div class="wrapper">
-							<a href="resume.pdf" role="button" class="btn btn-primary btn-lg">View my R&eacute;sum&eacute;</a>
-							<a href="resume.pdf" role="button" class="btn btn-primary btn-md">View my R&eacute;sum&eacute;</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="row" id="projects">
-			<div class="container">
-				<h1 class="title"><span>Projects</span></h1>
-				<div class="row">
-					<div class="col-sm-4">
-						<h2>Game Jam <br/><small>Group Project - C#, Unity</small></h2>
-						<p>
-							Created under 24 hours, this game features two players controlling a wizard that has to ward off monsters and survive. Each player has access to a red,
-							blue, and yellow spell which they must combine to match the enemies.
-						</p>
-						<div class="wrapper">
-							<div class="sm-down">
-								<a href="https://github.com/TalCohen/cshgamejam2016" target="_blank" role="button" class="btn btn-default btn-md">
-									Check out on Github
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<h2>2D Physics <br/><small>Solo Project - C#, MonoGame</small></h2>
-						<p>
-							Started as a solo hackathon project, I ventured to learn what it takes to represent 2D game physics in code. This is written in C# and MonoGame.
-						</p>
-						<div class="wrapper">
-							<div class="sm-down">
-								<a href="https://github.com/ttanatb/2d-physics" target="_blank" role="button" class="btn btn-default btn-md">
-									Check out on Github
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<h2>Blank Canvas <br/><small>Group Project - C#, MonoGame</small></h2>
-						<p>
-						Lemon drops danish halvah. Chupa chups pastry tootsie roll gingerbread gingerbread candy muffin powder. Pastry toffee carrot cake pastry tiramisu marshmallow sweet roll. Tart cheesecake bonbon lemon drops sugar plum.
-						</p>
-						<div class="wrapper">
-							<div class="sm-down">
-								<a href="https://github.com/ttanatb/blank-canvas" target="_blank" role="button" class="btn btn-default btn-md">
-									Check out on Github
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row md-up">
-					<div class="col-sm-4">
-						<a href="https://github.com/TalCohen/cshgamejam2016" target="_blank" role="button" class="btn btn-default btn-md">
-						Check out on Github
-						</a>
-					</div>
-					<div class="col-sm-4">
-						<a href="https://github.com/ttanatb/2d-physics" target="_blank" role="button" class="btn btn-default btn-md">
-						Check out on Github
-						</a>					
-					</div>					
-					<div class="col-sm-4">
-						<a href="https://github.com/ttanatb/blank-canvas" target="_blank" role="button" class="btn btn-default btn-md">
-						Check out on Github
-						</a>					
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="row" id="other-works">
-			<div class="container">
-				<h1 class="title"><span>Other works</span></h1>
-				<h2>Posters (and artwork)</h2>
-				<div class="row sm-up">
-					<div class="col-xs-3">
-						<div class="image">
-							<img src="media/poster1.png" alt="Poster1" />
-						</div>
-					</div>
-					<div class="col-xs-3">
-						<div class="image">
-							<img src="media/poster2.png" alt="Poster1" />
-						</div>					
-					</div>
-					<div class="col-xs-3">
-						<div class="image">
-							<img src="media/poster3.png" alt="Poster1" />
-						</div>
-					</div>
-					<div class="col-xs-3">
-						<div class="image">
-							<img src="media/poster4.png" alt="Poster1" />
-						</div>					
-					</div>
-				</div>
-				<div class="row xs-only">
-					<div class="col-xs-6">
-						<div class="image">
-							<img src="media/poster1.png" alt="Poster1" />
-						</div>
-					</div>
-					<div class="col-xs-6">
-						<div class="image">
-							<img src="media/poster2.png" alt="Poster1" />
-						</div>					
-					</div>				
-				</div>
-				<br />
-				<div class="row xs-only">
-					<div class="col-xs-6">
-						<div class="image">
-							<img src="media/poster3.png" alt="Poster1" />
-						</div>
-					</div>
-					<div class="col-xs-6">
-						<div class="image">
-							<img src="media/poster4.png" alt="Poster1" />
-						</div>					
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<a href="https://www.behance.net/tanatb" target="_blank" role="button" class="btn btn-default btn-md right"> More on Behance! </a>
-					</div>
-				</div>
-				<br />
-				<div class="row">
-					<div class="col-sm-7">
-						<br />
-					</div>
-					<div class="col-sm-5">
-						<h2>Article Writing</h2>
-						<p>I write bi-weekly articles about Hearthstone for Electronic Gaming Federation.</p>
-						<a href="http://media.egfederation.com/" target="_blank" role="button" class="btn btn-default btn-md right"> Check it out! </a>
-					</div>
-				</div>
-			</div>
-		</section>
+				<div class="col-sm-8">
+					<h3>I'm passionate about making games engaging and impactful</h3>
+					<hr />
+					<p>
+						I'm a student at Rochester Institute of Technology studying game design and development. I have worked
+						primarily with C#, Unity, and MonoGame (the spiritual successor to XNA). I like exploring different gameplay
+						algorithms to create an experience that is both fluid and interactive. I also like to experiment with different
+						design concepts in atempt to evoke a wide range of emotions.
+					</p>
 						
-		<!--
-		<section class="row" id="skills-experience">
-			<div class="container">
-				<div class="row">
-					<h2> My Skills </h2>
-					<p> Memes </p>
+					<p>
+						Outside of programming, I enjoy learning more about the human complex, either through the rationality
+						defined in game theory or the social interactions examined in social psychology. I also work as a graphic
+						designer to help further understand the emotions that are perceived from different styles and designs.
+					</p>
+					<div class="wrapper">
+						<a href="resume.pdf" role="button" class="btn btn-primary btn-lg">View my R&eacute;sum&eacute;</a>
+						<a href="resume.pdf" role="button" class="btn btn-primary btn-md">View my R&eacute;sum&eacute;</a>
+					</div>
 				</div>
 			</div>
-		</section>
-		-->
-		<footer class="row">
-			<div class="col-md-12">
-				<p> &copy; Tanat Boozayaangool 2016 </p>
-				
+		</div>
+	</section>
+	<section class="row" id="projects">
+		<div class="container">
+			<h1 class="title"><span>Projects</span></h1>
+			<div class="row">
+				<div class="col-sm-4">
+					<h2>Game Jam <br/><small>Group Project - C#, Unity</small></h2>
+					<p>
+						Created under 24 hours, this game features two players controlling a wizard that has to ward off monsters and survive. Each player has access to a red,
+						blue, and yellow spell which they must combine to match the enemies.
+					</p>
+					<div class="wrapper">
+						<div class="sm-down">
+							<a href="https://github.com/TalCohen/cshgamejam2016" target="_blank" role="button" class="btn btn-default btn-md">
+								Check out on Github
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<h2>2D Physics <br/><small>Solo Project - C#, MonoGame</small></h2>
+					<p>
+						Started as a solo hackathon project, I ventured to learn what it takes to represent 2D game physics in code. This is written in C# and MonoGame.
+					</p>
+					<div class="wrapper">
+						<div class="sm-down">
+							<a href="https://github.com/ttanatb/2d-physics" target="_blank" role="button" class="btn btn-default btn-md">
+								Check out on Github
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<h2>Blank Canvas <br/><small>Group Project - C#, MonoGame</small></h2>
+					<p>
+					Lemon drops danish halvah. Chupa chups pastry tootsie roll gingerbread gingerbread candy muffin powder. Pastry toffee carrot cake pastry tiramisu marshmallow sweet roll. Tart cheesecake bonbon lemon drops sugar plum.
+					</p>
+					<div class="wrapper">
+						<div class="sm-down">
+							<a href="https://github.com/ttanatb/blank-canvas" target="_blank" role="button" class="btn btn-default btn-md">
+								Check out on Github
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</footer>
-	</div>
+			<div class="row md-up">
+				<div class="col-sm-4">
+					<a href="https://github.com/TalCohen/cshgamejam2016" target="_blank" role="button" class="btn btn-default btn-md">
+					Check out on Github
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="https://github.com/ttanatb/2d-physics" target="_blank" role="button" class="btn btn-default btn-md">
+					Check out on Github
+					</a>					
+				</div>					
+				<div class="col-sm-4">
+					<a href="https://github.com/ttanatb/blank-canvas" target="_blank" role="button" class="btn btn-default btn-md">
+					Check out on Github
+					</a>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="row" id="other-works">
+		<div class="container">
+			<h1 class="title"><span>Other works</span></h1>
+			<h2>Posters (and artwork)</h2>
+			<div class="row sm-up">
+				<div class="col-xs-3">
+					<div class="image">
+						<img src="media/poster1.png" alt="Poster1" />
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="image">
+						<img src="media/poster2.png" alt="Poster1" />
+					</div>					
+				</div>
+				<div class="col-xs-3">
+					<div class="image">
+						<img src="media/poster3.png" alt="Poster1" />
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="image">
+						<img src="media/poster4.png" alt="Poster1" />
+					</div>					
+				</div>
+			</div>
+			<div class="row xs-only">
+				<div class="col-xs-6">
+					<div class="image">
+						<img src="media/poster1.png" alt="Poster1" />
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="image">
+						<img src="media/poster2.png" alt="Poster1" />
+					</div>					
+				</div>				
+			</div>
+			<br />
+			<div class="row xs-only">
+				<div class="col-xs-6">
+					<div class="image">
+						<img src="media/poster3.png" alt="Poster1" />
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="image">
+						<img src="media/poster4.png" alt="Poster1" />
+					</div>					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="https://www.behance.net/tanatb" target="_blank" role="button" class="btn btn-default btn-md right"> More on Behance! </a>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-sm-7">
+					<br />
+				</div>
+				<div class="col-sm-5">
+					<h2>Article Writing</h2>
+					<p>I write bi-weekly articles about Hearthstone for Electronic Gaming Federation.</p>
+					<a href="http://media.egfederation.com/" target="_blank" role="button" class="btn btn-default btn-md right"> Check it out! </a>
+				</div>
+			</div>
+		</div>
+	</section>
+					
+	<!--
+	<section class="row" id="skills-experience">
+		<div class="container">
+			<div class="row">
+				<h2> My Skills </h2>
+				<p> Memes </p>
+			</div>
+		</div>
+	</section>
+	-->
+	<footer class="row">
+		<div class="col-md-12">
+			<p> &copy; Tanat Boozayaangool 2016 </p>
+			
+		</div>
+	</footer>
+</div>
 </body>
 </html>
