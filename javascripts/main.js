@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
 	var objects = [$("nav"), $("#welcome"), $("#welcome h1"), $("#welcome h1 small"), $("#about-me"), $("#projects"), $("#other-works"), $("footer")]
-	var delays = [400, 1000, 500, 500, 800, 800, 800, 800];
+	var delays = [400, 500, 500, 500, 800, 800, 800, 800];
 	
 	for(i = 0; i < objects.length; i++) {
 		if (i > 0) {
