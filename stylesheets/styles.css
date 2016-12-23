@@ -1,291 +1,592 @@
-/* GENERAL CSS STUFF */
-nav, #welcome, #welcome h1, #welcome h1 small, #about-me, #projects, #other-works, footer {
-	opacity: 0;
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+html, body {
+    overflow-x: hidden;
 }
 
-.wrapper {
-	text-align: center;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    color: #292F36;
 }
 
-body {
-	padding-top: 50px;
+p, a, li, figcaption {
+    font-family: 'Raleway', sans-serif;
+    color: #292F36;
 }
 
-
-.btn-md {
-	padding: 8px 14px;
-	font-size:	16px;
-	line-height: 1.3333333;
+.float-right {
+    float:right;
 }
 
-.right {
-	float: right;
+img {
+    width: 100%;
+    height: 100%;
 }
 
 section {
-	padding-top: 1em;
-	padding-bottom: 4em;
-	overflow: hidden;
+    padding: 4em 0;
 }
 
-img, .image {
-	width: 100%;
+.sm-below {
+    display: none;
 }
 
-.title {
-	font-size: 300%;
-	text-align: center;
-	margin-bottom: 1em;
+.hidden {
+    display: none;
 }
 
-.title span {
-	display: inline-block;
-	position: relative;
+.float-right {
+    float:right;
 }
 
-.title span:before, .title span:after {
-	content: "";
-	position: absolute;
-	height: 0px;
-	border-bottom: 1px solid black;
-	top: 50%;
-	width: 1000px;
+#resume {
+    position: fixed;
+    z-index: 999;
+    background-image: url(../media/resume-icon.png);
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    right: 10px;
+    transition: 0.2s all ease 0s;
+    text-decoration: none;
 }
 
-.title span:before {
-	right: 100%;
-	margin-right: 25px;
+#resume p {
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    transition: 0.2s all ease 0s;
 }
 
-.title span:after {
-	left: 100%;
-	margin-left: 25px;
+#resume:hover {
+    height: 55px;
+    width: 55px;
+    background-size: 55px 55px;
 }
 
-.md-up {
-	display: none;
+#resume:hover > p {
+    opacity: 1;
+    top: 55px;
 }
 
-.xs-only {
-	display:none;
+/*
+nav {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    z-index: 999;
 }
 
-@media (min-width: 1200px) {
-	p {
-		font-size: 1.1em;
-	}
-	
-
+nav ul{
+    padding: 0;
+    list-style: none;
 }
 
-@media (min-width: 768px) {
-	section {
-		padding-top: 2em;
-		padding-bottom: 5em;
-	}
-	
-	.title {
-		font-size: 400%;
-	}
-	
-	.sm-down {
-		display: none;
-	}
-	
-	.md-up {
-		display: block;
-	}
+span p {
+    color: #AFB2B1;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    opacity: 0;
+    transition: 0.3s;
+    display:none;
+    
+}
+
+span:hover > p {
+    opacity: 1;
+    margin-left: 50px;
+    display:inline;
 }
 
 
+nav span#top {
+    top: 35%;
+}
 
-@media (max-width: 480px) {
-	.sm-down .btn{
-		display: block;
-	}
-	
-	.xs-only {
-		display: block;
-	}
-	
-	.sm-up {
-		display: none;
-	}
+nav span#about {
+    top: 40%;
+}
+
+nav span#projects {
+    top: 45%
+}
+
+nav span#contact {
+    top: 50%;
+}
+
+nav span#resume {
+    top: 60%;
+}
+
+nav span {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+    transition: 0.3s;
+    left: 40px;
+    -ms-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg);  
+    transform: rotate(180deg);
+}
+
+nav span:before, nav span:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 20px solid transparent;
+    transition: 0.3s;
+}
+
+nav span:after {
+    margin-top: 20px;
+    border-top-color: #22272D;
+}
+
+nav span:before {
+    border-bottom-color: #292F36;
+    margin-top: -20px;
+}
+
+nav span:hover {
+    -ms-transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg);  
+    transform: rotate(360deg);
+}
+
+a#active > span:before {
+    border-bottom-color: #FF7878;
+    
+}
+
+a#active > span:after {
+    border-top-color: #FF6B6B;
+}
+
+a#active > span > p {
+    color: #FF6B6B;
+}
+
+span#resume:before {
+    border-bottom-color: #24394F;
+}
+
+span#resume:after {
+    border-top-color: #1D2E3F;
+}
+
+span#resume > p {
+    color: #1D2E3F;
+}
+
+button.navbar-toggle {
+    padding: 8px 9px
+}
+
+span.icon-bar {
+    width: 16px!important;
+}
+
+button.collapsed.navbar-toggle:hover > span {
+    background-color: #E1ECEC;
+}
+
+button.collapsed.navbar-toggle {
+    border: 1px solid #24323C;
+    background-color: white;
+}
+
+button.collapsed.navbar-toggle > span {
+    background-color: #24323C;
+}
+
+button.collapsed.navbar-toggle:hover {
+    background-color: #24323C;
+}
+
+button.navbar-toggle {
+    background-color: #24323C;
+}
+
+button.navbar-toggle > span {
+    background-color: #E1ECEC;
+}
+
+button.navbar-toggle:hover {
+    background-color: white;
+    border: 1px solid #24323C;
+
+}
+
+button.navbar-toggle:hover > span {
+    background-color: #24323C;
+}
+*/
+
+header {
+	background-image: url(../media/header.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+    background-position: center center;
+	height: 100vh;
+}
+
+header .jumbotron {
+    background-color: transparent;
+    margin-top: 35vh;
+}
+
+header .jumbotron hr {
+    border-color: #292F36;
+    box-shadow: 1px 1px 3px rgba(41,47,54, 0.5);
+    width: 580px;
+}
+
+header .jumbotron h1, header .jumbotron h2 {
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(41,47,54, 0.5);
+    color: #292F36;
 }
 
 @media (max-width: 767px) {
-	nav div .navbar-header .navbar-brand {
-	font-size: 1.2em;
-	}
+    header .jumbotron hr {
+        width: 330px;
+    }
 }
 
-/* CSS FOR THE NAV BAR */
-
-/* CSS FOR THE WELCOME SECTION */
-
-#welcome {
-	background-image: url(../media/welcome-xl.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	min-height: 550px;
+@media (max-width: 481px) {
+    header .jumbotron hr {
+        display: none;
+    }
 }
 
-#welcome .jumbotron {
-	padding: 4em 0px 0px;
-	background-color: inherit;
-	color: white;
+.about-me {
+    background-color: #F1F6F4;
+    background: url(../media/portrait-xl.png);
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
 
-#welcome .jumbotron h1 {
-	font-size: 72px;
-	line-height: 64px;
-}
 
-#welcome .jumbotron small {
-	color: #e2e2e2;
-}
 
 @media (max-width: 1199px) {
-	#welcome {
-		/*background-image: url(../media/welcome-lg.png);*/
-		background-size: auto 125%;
-		min-height: 450px;
-	}
-	
-	#welcome .jumbotron h1 {
-		font-size: 68px;
-		line-height: 60px;
-	}
+    .about-me {
+        background: url(../media/portrait-lg.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;   
+    }
 }
 
 @media (max-width: 991px) {
-	#welcome {
-		/*background-image: url(../media/welcome-md.png);*/
-		min-height: 400px;
-		background-size: auto 120%;
-	}
+    .about-me .col-md-6 {
+        width: 45%;
+    }
+    
+    .about-me {
+        background-size: 80% auto;
+    }
+
 }
 
 @media (max-width: 767px) {
-	#welcome {
-		/*background-image: url(../media/welcome-sm.png);*/
-		background-size: 140% auto;
-		min-height: 250px;
-	}
-	
-	#welcome .jumbotron {
-		padding-top: 3em;
-	}
-	
-	#welcome .jumbotron h1 {
-		font-size: 52px;
-		margin: 0;
-		line-height: 48px;
-	}
+    .about-me {
+        background-image: none;
+    }
+    .about-me .col-md-6 {
+        width: 100%;
+    }
+    
+    .about-me img {
+        margin-top: 1em;
+        max-width: 340px;
+    }
+    
+    .about-me .visible-xs {
+        text-align:center;
+    }
+    
 }
 
-@media (max-width: 480px) {
-	#welcome {
-		background-size: 150% auto;
-		min-height: 200px;
-	}
-	#welcome .jumbotron h1 {
-		font-size: 34px;
-		line-height: 30px;
-	}
+.skills {
+    position: relative;
+    background-color: #F1F6F4;
+    z-index: -10;
 }
 
-/* CSS FOR THE ABOUT ME SECTION */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-#about-me {
-	background-color: #47423c;
-	color: white;
+.skills ul li {
+    display:inline-flex;
+    width: 100px;
+    height: 100px;
+    background-color: #3C4148;
+    color: #E3EDE9;
+    margin-top: 0px;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.skills ul li div {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+#portfolio {
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 
 }
 
-#about-me h3 {
-	font-weight: bolder;
-	/*text-align: center;*/
+#portfolio figure {
+    transition: all 0.2s ease 0s;
 }
 
-#about-me .btn-lg, #about-me .btn-md {
-	position:relative;
-	top: 1em;
+#portfolio figure img {
 }
 
-#about-me .btn-md {
-	display: none;
+#portfolio figure figcaption {
+    background: url(../media/figureBG.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+    height: 20px;
+    padding-top: 1.25em;
+    padding-left: 1.1em;
+    transition: all 0.2s ease 0s;
 }
 
-
-
-img {
-	width: 100%;
+#portfolio figure figcaption h5, #portfolio figure figcaption p {
+    margin: 0;
+    color: white;
 }
 
-#about-me img {
-	padding-top: 20px;
-	border-radius: 50%;
+#portfolio figure figcaption h5 {
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+#portfolio figure figcaption p {
+}
+
+#portfolio figure:hover > figcaption {
+    background-position: bottom left;
+    top: -150px;
+    height: 150px;
+}
+
+#portfolio figure:hover {
+    margin-bottom: -130px;
+}
+
+.github-logo {
+    float: right;
+    margin-top: 77px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    display:block;
+    background-image: url(../media/github.png);
+}
+
+.github-logo:hover {
+    background-image: url(../media/github-over.png);
+}
+
+@media (max-width: 1201px) {
+    
+    #portfolio figure figcaption {
+        padding-left: 0.8em;       
+    }
+    
+    #portfolio figure:hover > figcaption {
+        padding-top: 0.8em;
+
+        top: -123px;
+        height: 123px;
+    }   
+    
+    #portfolio figure:hover {
+        margin-bottom: -103px;
+    }
+    
+    .github-logo {
+        margin-top: 51px;
+    }
 }
 
 @media (max-width: 991px) {
-	#about-me .btn-lg {
-		display:none;
-	}
-	
-	#about-me .btn-md {
-		display: inline;
-	}
+    #portfolio figure figcaption {
+        opacity: 0.0;
+        background-image: none;
+        background-color: #3C4148;
+        padding-right: 1em;
+        height: 20px;
+    }
+    
+    #portfolio figure figcaption .btn {
+        position: relative;
+        margin: 1em 0;
+    }
+
+    
+    #portfolio figure:hover > figcaption {
+        opacity: 1.0;
+        top: 0px;
+        height: 155px;
+    }
+    
+    #portfolio figure:hover {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 767px) {
-	#about-me img {
-		width: 45%;
-		margin: 0 22.5%;
-	}
+    #portfolio figure:hover {
+        margin-bottom: 20px;
+    }
+    
+    #portfolio figure figcaption {
+        margin-top: 3px;
+        height: auto;
+        max-height: 0px;
+    }
+    
+    #portfolio figure:hover >figcaption {
+        margin-top: -3px;
+        height: auto;
+        max-height: 200px;
+    }
+    
+    #portfolio figure figcaption p {
+        margin-bottom: 1em;
+    }
+    
+    #portfolio figure figcaption .btn {
+    }
+}
 
+#contact-me ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact-me ul li {
+    display:inline-block;
+}
+
+#contact-me ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60px auto;
+    transition: all 0.2s ease 0s;
+}
+
+#twitter {
+    background-image: url(../media/twitter-logo.png);
+}
+
+#linkedin {
+    background-image: url(../media/linkedin-logo.png);
+}
+
+#github {
+    background-image: url(../media/github-logo.png);
+}
+
+#mail {
+    background-image: url(../media/mail-icon.png);
+}
+
+#contact-me ul li a:after {
+    border: 12px solid transparent;
+    content: "";
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 6px;
+    top: 23px;
+    display: block;
+    opacity: 0.0;
+    transition: all 0.2s ease 0s ;
+}
+
+#contact-me ul li a:hover:after {
+    opacity: 1.0;
+    top: 43px;
+    border-bottom: 12px solid #292F36;
+
+}
+
+#contact-me ul li a p{
+    color: white;
+    padding: 5px;
+    position: relative;
+    display: inline;
+    top: 70px;
+    opacity: 0.0;
+    transition: all 0.2s ease 0s;
+}
+
+#contact-me ul li a:hover > p{
+    opacity: 1.0;
+    top: 90px;
+    background-color: #292F36;
+}
+
+#contact-me ul li a:hover {
+    width: 70px;
+    height: 70px;
+    background-size: 70px auto;
 }
 
 @media (max-width: 480px) {
-	#about-me img {
-		width: 60%;	
-		margin: 0 20%;
-	}
-		
-	#about-me .btn-md {
-		display: block;
-	}
+    #contact-me ul li a {
+        width: 40px;
+        height: 40px;
+        background-size: 40px auto;
+    }
+    
+    #contact-me ul li a:hover {
+        width: 50px;
+        height: 50px;
+        background-size: 50px auto;
+    }
+    
+    #contact-me ul li a:after {
+        top: 12px;
+    }
+    
+    #contact-me ul li a:hover:after {
+        top: 22px;
+    }
+    
+    #contact-me ul li a p {
+        top: 46px;
+    }
+    
+    #contact-me ul li a:hover > p{
+        top: 66px;
+    }
 }
 
-/* CSS FOR MY PROEJCTS */
-
-#projects {
-	background-color: #d5dbe5;
-}
-
-#other-works {
-	background-color: #829186;
-	color: white;
-}
-
-#other-works .title span:before, #other-works .title span:after {
-	border-color: white;
-}
-
-#other-works a {
-	margin-top: 20px;
-}
-
-.class {
-	width: 100%;
-	height: 50px;
-}
-
-/* CSS FOR THE FOOTER */
-
-footer {
-	text-align: center;
-	padding: 20px;
-	background-color: #222;
-	color: white;
-}
