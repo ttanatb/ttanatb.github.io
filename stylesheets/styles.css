@@ -556,6 +556,10 @@ header .jumbotron h1, header .jumbotron h2 {
     background-image: url(../media/mail-icon.png);
 }
 
+#contact-me {
+    padding-bottom: 0;
+}
+
 #contact-me ul li a:after {
     border: 12px solid transparent;
     content: "";
@@ -628,3 +632,12 @@ header .jumbotron h1, header .jumbotron h2 {
     }
 }
 
+#copyright {
+    font-style: italic;
+    text-align: center;
+    margin-top: 3em;
+    background-color: #3C4148;
+    color: #F1F6F4;
+    margin-bottom: 0;
+    padding: 0.5em 0;
+}
