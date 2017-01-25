@@ -358,7 +358,7 @@ header .jumbotron h1, header .jumbotron h2 {
     text-align: center;
 }
 
-#portfolio, #contact-me, #about-me {
+#portfolio, #contact-me, .about-me {
     box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
     position: relative;
     z-index: 2;
@@ -366,9 +366,6 @@ header .jumbotron h1, header .jumbotron h2 {
 
 #portfolio figure {
     transition: all 0.2s ease 0s;
-}
-
-#portfolio figure img {
 }
 
 #portfolio figure figcaption {
