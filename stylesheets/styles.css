@@ -53,6 +53,22 @@ section {
     color: #E7F6F4;
 }
 
+
+.btn-style-inverse, .btn-style-inverse:visited {
+    display: block;
+    background-color: #F1F6F4;
+    color: #3C4148;
+}
+
+.btn-style-inverse:hover {
+    background-color: #DCE0DE;
+    color: #2C3035;
+}
+
+.btn-style-inverse:active {
+    background-color: #C6CAC8;
+}
+
 #resume {
     position: fixed;
     z-index: 999;
@@ -369,15 +385,13 @@ header .jumbotron h1, header .jumbotron h2 {
 }
 
 #portfolio figure figcaption {
-    background: url(../media/figureBG.png);
-    background-position: top left;
-    background-repeat: no-repeat;
+    background-color: #3C4148;
     overflow: hidden;
     position: relative;
     top: -20px;
     height: 20px;
-    padding-top: 1.25em;
-    padding-left: 1.1em;
+    padding: 1em 1.1em 0;
+    opacity:0.0;
     transition: all 0.2s ease 0s;
 }
 
@@ -391,17 +405,22 @@ header .jumbotron h1, header .jumbotron h2 {
     margin-bottom: 0.4em;
 }
 
-#portfolio figure figcaption p {
+#portfolio a {
+    text-decoration: none;
 }
 
 #portfolio figure:hover > figcaption {
     background-position: bottom left;
-    top: -150px;
-    height: 150px;
+    top: -130px;
+    height: 130px;
+    opacity: .9;
 }
 
 #portfolio figure:hover {
-    margin-bottom: -130px;
+    margin-bottom: -110px;
+}
+
+#portfolio br {
 }
 
 .github-logo {
@@ -425,14 +444,13 @@ header .jumbotron h1, header .jumbotron h2 {
     }
     
     #portfolio figure:hover > figcaption {
-        padding-top: 0.8em;
-
-        top: -123px;
-        height: 123px;
+        padding-top: 0.7em;
+        height: 141px;
+        top: -141px;
     }   
     
     #portfolio figure:hover {
-        margin-bottom: -103px;
+        margin-bottom: -121px;
     }
     
     .github-logo {
@@ -441,28 +459,17 @@ header .jumbotron h1, header .jumbotron h2 {
 }
 
 @media (max-width: 991px) {
-    #portfolio figure figcaption {
-        opacity: 0.0;
-        background-image: none;
-        background-color: #3C4148;
-        padding-right: 1em;
-        height: 20px;
-    }
-    
-    #portfolio figure figcaption .btn {
-        position: relative;
-        margin: 1em 0;
-    }
-
-    
     #portfolio figure:hover > figcaption {
-        opacity: 1.0;
-        top: 0px;
-        height: 155px;
+        top: -220px;
+        height: 220px;
     }
     
     #portfolio figure:hover {
-        margin-bottom: 20px;
+        margin-bottom: -200px;
+    }
+    
+    figure h5 {
+        line-height: 1.5em;
     }
 }
 
@@ -472,22 +479,20 @@ header .jumbotron h1, header .jumbotron h2 {
     }
     
     #portfolio figure figcaption {
-        margin-top: 3px;
+        top:0px;
         height: auto;
         max-height: 0px;
+        padding-bottom: 1em;
     }
     
     #portfolio figure:hover >figcaption {
-        margin-top: -3px;
+        top: 0px;
         height: auto;
-        max-height: 200px;
-    }
-    
-    #portfolio figure figcaption p {
-        margin-bottom: 1em;
+        max-height: 250px;
     }
     
     #portfolio figure figcaption .btn {
+        margin: 1em 0 0;
     }
 }
 
