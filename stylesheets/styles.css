@@ -499,10 +499,10 @@ header .jumbotron h1, header .jumbotron h2 {
     float: left;
 }
 
-#others .row {
+#others hr {
     margin-bottom: 2em;
+    border-top-color: rgba(41,47,54,.1);
 }
-
 
 @media (max-width: 767px) {
     #others .btn {
