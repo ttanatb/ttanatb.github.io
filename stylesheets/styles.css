@@ -261,51 +261,143 @@ button.navbar-toggle:hover > span {
 */
 
 header {
-	background-image: url(../media/header.png);
-	background-repeat: no-repeat;
-	background-size: auto 100%;
-    background-position: center center;
-	height: 100vh;
+    max-height: 900px;
+	height: 98vh;
+    padding-top: 175px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
-header .jumbotron {
-    background-color: transparent;
-    margin-top: 35vh;
+#header-corner, #header-corner-2 {
+    width: 500px;
+    height: 400px;
+    height: auto;
 }
 
-header .jumbotron hr {
-    border-color: #292F36;
-    box-shadow: 1px 1px 3px rgba(41,47,54, 0.5);
-    width: 580px;
+#header-corner {
+    position: absolute;
+    transform: rotate(180deg);
+    top: 0px;
+    right: 0px;
 }
 
-header .jumbotron h1, header .jumbotron h2 {
+#header-corner-2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -20;
+}
+
+#header-wrapper {
+    transition: all 0.5s ease 0s;
+    transform: rotate(-90deg);
+}
+
+.rotateSquare {
+    transform: rotate(0deg) !important;
+}
+
+#top-square, #bot-square {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: solid transparent;
+    border-right: solid transparent;
+    position: relative;
+}
+
+#top-square {
+    border-bottom: solid #292F36;
+    top: 72px;
+}
+
+#bot-square {
+    border-top: solid #292F36;
+    top: -72px;
+}
+
+#top-square, #bot-square {
+    border-width: 175px;
+    z-index: 0;
+}
+
+#title, #description, #divider {
+    opacity: 0;
     text-align: center;
     text-shadow: 1px 1px 3px rgba(41,47,54, 0.5);
-    color: #292F36;
+}
+
+#divider {
+    width: 0;
+    border-color: #292F36;
+    box-shadow: 1px 1px 3px rgba(41,47,54, 0.5);
+}
+
+@media (max-width: 991px) {
+    #top-square, #bot-square {
+        border-width: 125px;
+    }
 }
 
 @media (max-width: 767px) {
-    header .jumbotron hr {
-        width: 330px;
+    #header-corner {
+        top: -150px;
+    }
+    
+    #header-corner-2 {
+        bottom: -150px;
     }
 }
 
 @media (max-width: 481px) {
-    header .jumbotron hr {
-        display: none;
+    #header-corner {
+        top: -200px;
+    }
+    
+    #header-corner-2 {
+        bottom: -200px;    
+    }
+    
+    #top-square, #bot-square {
+        border-width: 75px;
+    }
+    
+    #top-square {
+        top: 67px;
+    }
+    
+    #bot-square {
+        top: -67px;
+    }
+    
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header h2 {
+        font-size: 26px;
+    }
+    
+}
+
+@media (max-width: 278px) {
+    header h1 {
+        font-size: 26px;
     }
 }
 
-.about-me {
+#section-wrapper, #portfolio {
     background-color: #F1F6F4;
+}
+
+.about-me {
+    z-index: 20;
     background: url(../media/portrait-xl.png);
     background-size: 60% auto;
     background-repeat: no-repeat;
     background-position: left bottom;
+    font-size: 1.2em;
 }
-
-
 
 @media (max-width: 1199px) {
     .about-me {
@@ -347,7 +439,7 @@ header .jumbotron h1, header .jumbotron h2 {
 
 .skills, #others {
     position: relative;
-    background-color: #F1F6F4;
+    background-color: white;
     z-index: 1;
 }
 
@@ -418,9 +510,6 @@ header .jumbotron h1, header .jumbotron h2 {
 
 #portfolio figure:hover {
     margin-bottom: -110px;
-}
-
-#portfolio br {
 }
 
 .github-logo {

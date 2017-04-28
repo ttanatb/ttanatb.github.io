@@ -12,7 +12,8 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
@@ -22,6 +23,38 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>Tanat Boozayaangool</title>
+    <script>
+        $(document).ready(function() {
+            var resize = function() {
+                var padding = $("header").innerHeight() - $("header").height();
+                $("header").css("padding-top", ($("header").innerHeight() / 2) - ($("#header-wrapper").height() / 2));
+            }
+            resize();
+            $(window).resize(resize);
+            
+            $("#header-wrapper").addClass("rotateSquare");
+            $("#bot-square").delay(400).animate({
+                top : "+=100px"
+            }, 500, "swing");
+            
+            $("#top-square").delay(400).animate({
+                top : "-=100px"
+            }, 500, "swing");
+            
+            $("#divider").delay(700).animate({
+                opacity: 1.0
+            }, 100, "swing");
+            
+            var dividerW = "+=" + $("#top-square").outerWidth() * 1.5 + "px";
+            $("#divider").animate({
+                width: dividerW
+            }, 500, "swing");
+            
+            $("#title, #description").delay(1150).animate({
+                opacity: 1.0
+            }, 250, "swing");
+        });
+    </script>
 </head>
 <body>
 <img class="hidden" src="media/github-over.png" alt="Hidden to hasten load time" />
@@ -38,34 +71,40 @@
 </nav>
 -->
 <header class="row">
+    <img id="header-corner" alt="header-corner" src="media/header-corner.png"/>
     <div class="col-xs-12">
-        <div class="jumbotron">
-            <h1>Tanat Boozayaangool</h1>
-            <hr />
-            <h2>Game Developer</h2>
+        <div id="header-wrapper">
+            <div id="top-square"></div>
+                <h1 id="title">Tanat Boozayaangool</h1>
+                <hr id="divider"/>
+                <h2 id="description">Game Developer</h2>
+            <div id="bot-square"></div>
         </div>
     </div>
+    <img id="header-corner-2" alt="header-corner" src="media/header-corner.png"/>
 </header>
-<section class="about-me">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 float-right">
-                <h2>Hey there!</h2>
-                <p>My name is Tanat Boozayaangool and I'm passionate about making games that are engaging and impactful. I'm currently at Rochester Institute of Technology studying game design and development. I like exploring different gameplay algorithms and creating an experience that is both fluid and interactive. 
-                </p>
-
-                <p>
-                Outside of programming, I enjoy learning more about the human complex, either through the rationality defined in game theory or the social interactions examined in social psychology. I also work as a graphic designer to help further explore different design patterns and styles.
-                </p>
+<div id="section-wrapper">
+    <section class="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 float-right">
+                    <h2>Hey there!</h2>
+                    <p>
+                        My name is Tanat Boozayaangool and I like making games. More specifically, I enjoy gameplay programming, but I also do pretty much everything else.
+                    </p>
+                    <p>
+                        Additionally, I do a lot of VR/AR work. I also do not shy away from the being a Game Designer or a Producer. I do a lot of front-end web development as well. I also have experience working on UI/UX and graphic design.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="visible-xs col-xs-12">
+                    <img src="media/portrait-sm.png" alt="Portrait"/>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="visible-xs col-xs-12">
-                <img src="media/portrait-sm.png" alt="Portrait"/>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</div>
 <section class="skills">
     <div class="container">
         <div class="row">
@@ -321,7 +360,7 @@
         <div class="row">    
             <div class="col-sm-5">
                 <h4>Writing</h4>
-                <p>I write bi-weekly articles for Electronic Gaming Federation in which I explore the underlying mechanics in Hearthstone and try to help newer players view Hearthstone in a more technical way. You can view some of my articles <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank">here</a>.</p>
+                <p>I write bi-weekly articles for Electronic Gaming Federation where I explore the mechanics of Hearthstone and try to give a different perspective to the game. You can view some of my articles <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank">here</a>.</p>
                 <img class="visible-xs" src="media/egf-small.png"/>
                 <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank" class="btn btn-style btn-left" role="button">View More</a>
             </div>
@@ -338,7 +377,7 @@
             </div>
             <div class="col-sm-5">
                 <h4>Graphic Design</h4>
-                <p>I really enjoy using Adobe Illustrator, especially when I use it to make posters. You can view some of work through my <a href="https://www.behance.net/tanatb" target="_blank">Be&#772;hance</a>.</p>
+                <p>I really enjoy using Adobe Illustrator, especially when I get money for doing so. You can view some of work through my <a href="https://www.behance.net/tanatb" target="_blank">Be&#772;hance</a>.</p>
                 <img class="visible-xs" src="media/posters-small.png"/>
                 <a href="https://www.behance.net/tanatb" target="_blank" class="btn btn-style" role="button">View More</a>
             </div>
@@ -347,11 +386,11 @@
         <div class="row">
             <div class="col-sm-4">
                 <h4>Resdient Advisor</h4>
-                <p>I help establish a positive environment and build a community that is both inclusive and conducive to academic success for the students within residence halls of RIT.</p>
+                <p>I overlook a bunch of students and help build a positive learning environment for them.</p>
             </div>
             <div class="col-sm-4">
                 <h4>International Ambassador</h4>
-                <p>I attended GDC 2017 (Game Developer Conference) as an International Ambassador! You can learn more about being an International Ambassador <a href="http://www.internationalambassadors.us/" target="_blank">here</a>.
+                <p>I attended GDC (Game Developer Conference) 2017 as an International Ambassador! Learn more <a href="http://www.internationalambassadors.us/" target="_blank">here</a>.
                 </p>
             </div>
             <div class="col-sm-4">
