@@ -100,6 +100,11 @@ section {
     top: 55px;
 }
 
+header, #contact-me, #skills, #portfolio, #others, .about-me {
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+
 /*
 nav {
     position: absolute;
@@ -266,6 +271,7 @@ header {
     padding-top: 175px;
     background-repeat: no-repeat;
     background-position: bottom left;
+    z-index: 10;
 }
 
 #header-corner, #header-corner-2 {
@@ -386,12 +392,12 @@ header {
     }
 }
 
-#section-wrapper, #portfolio {
+#section-wrapper, #portfolio, #contact-me {
     background-color: #F1F6F4;
 }
 
 .about-me {
-    z-index: 20;
+    z-index: 9;
     background: url(../media/portrait-xl.png);
     background-size: 60% auto;
     background-repeat: no-repeat;
@@ -440,7 +446,10 @@ header {
 #skills, #others {
     position: relative;
     background-color: white;
-    z-index: 1;
+}
+
+#skills {
+    z-index: 8;
 }
 
 .skill-l, .skill-m, .skill-s {
@@ -498,10 +507,8 @@ header {
 }
 */
 
-#portfolio, #contact-me, .about-me {
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-    position: relative;
-    z-index: 2;
+#portfolio {
+    z-index: 7;
 }
 
 #portfolio figure {
@@ -617,6 +624,10 @@ header {
     }
 }
 
+#others {
+    z-index: 6;
+}
+
 #others .btn {
     float: right;
 }
@@ -685,6 +696,7 @@ header {
 
 #contact-me {
     padding-bottom: 0;
+    z-index: 4;
 }
 
 #contact-me ul li a:after {
