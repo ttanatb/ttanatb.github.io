@@ -271,27 +271,41 @@ header {
     padding-top: 175px;
     background-repeat: no-repeat;
     background-position: bottom left;
-    z-index: 10;
+    z-index: 0;
+}
+
+header #nav-down {
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+header #nav-down img {
+    width: 50px;
+    height: 50px;   
 }
 
 #header-corner, #header-corner-2 {
     width: 500px;
     height: 400px;
     height: auto;
+    position: absolute;
 }
 
 #header-corner {
-    position: absolute;
     transform: rotate(180deg);
     top: 0px;
     right: 0px;
 }
 
 #header-corner-2 {
-    position: absolute;
     left: 0px;
     bottom: 0px;
-    z-index: -20;
+    z-index: -120;
 }
 
 #header-wrapper {
@@ -343,25 +357,23 @@ header {
     #top-square, #bot-square {
         border-width: 125px;
     }
+    #header-corner, #header-corner-2 {
+        width: 400px;
+        height: 320px;
+    }
 }
 
 @media (max-width: 767px) {
-    #header-corner {
-        top: -150px;
-    }
-    
-    #header-corner-2 {
-        bottom: -150px;
+    #header-corner, #header-corner-2 {
+        width: 300px;
+        height: 240px;
     }
 }
 
 @media (max-width: 481px) {
-    #header-corner {
-        top: -200px;
-    }
-    
-    #header-corner-2 {
-        bottom: -200px;    
+    #header-corner, #header-corner-2 {
+        width: 250px;
+        height: 200px;
     }
     
     #top-square, #bot-square {
@@ -369,15 +381,15 @@ header {
     }
     
     #top-square {
-        top: 67px;
+        top: 65px;
     }
     
     #bot-square {
-        top: -67px;
+        top: -65px;
     }
     
     header h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
     
     header h2 {
@@ -388,7 +400,19 @@ header {
 
 @media (max-width: 278px) {
     header h1 {
-        font-size: 26px;
+        font-size: 24px;
+    }
+    
+    header h2 {
+        font-size: 20px;
+    }
+    
+    #top-square {
+        top: 60px;
+    }
+    
+    #bot-square {
+        top: -60px;
     }
 }
 
@@ -397,7 +421,8 @@ header {
 }
 
 .about-me {
-    z-index: 9;
+    position: relative;
+    z-index: 10;
     background: url(../media/portrait-xl.png);
     background-size: 60% auto;
     background-repeat: no-repeat;
