@@ -338,7 +338,7 @@ header #nav-down img {
 }
 
 #top-square, #bot-square {
-    border-width: 175px;
+    border-width: 155px;
     z-index: 0;
 }
 
@@ -414,6 +414,12 @@ header #nav-down img {
     
     #bot-square {
         top: -60px;
+    }
+}
+
+@media (max-height: 500px) {
+    #top-square, #bot-square {
+        display: none;
     }
 }
 
