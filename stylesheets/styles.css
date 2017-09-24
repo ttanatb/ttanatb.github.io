@@ -18,8 +18,8 @@ a {
     z-index:999;
 }
 
-.float-right {
-    float:right;
+.float-left {
+    float:left;
 }
 
 img {
@@ -37,10 +37,6 @@ section {
 
 .hidden {
     display: none;
-}
-
-.float-right {
-    float:right;
 }
 
 .btn-style, .btn-style:visited {
@@ -100,7 +96,7 @@ section {
     top: 55px;
 }
 
-header, #contact-me, #skills, #portfolio, #others, .about-me {
+header, #contact-me, #portfolio, #others, #about-me {
     box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
     position: relative;
 }
@@ -235,7 +231,7 @@ button.collapsed.navbar-toggle:hover > span {
 
 button.collapsed.navbar-toggle {
     border: 1px solid #24323C;
-    background-color: white;
+    background-color: #F6F9F8;
 }
 
 button.collapsed.navbar-toggle > span {
@@ -255,7 +251,7 @@ button.navbar-toggle > span {
 }
 
 button.navbar-toggle:hover {
-    background-color: white;
+    background-color: #F6F9F8;
     border: 1px solid #24323C;
 
 }
@@ -427,67 +423,158 @@ header #nav-down img {
     background-color: #F1F6F4;
 }
 
-.about-me {
+#about-me {
     position: relative;
     z-index: 10;
-    background: url(../media/portrait-xl.png);
-    background-size: 60% auto;
-    background-repeat: no-repeat;
-    background-position: left bottom;
+    background-color: #292F36;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.6);
+}
+
+#about-me p, #about-me h2, #about-me h3, #about-me li {
+    color: #F6F9F8;
+}
+
+#about-me ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+#about-me li {
+    width: 200px;
+    height: 76px;
+    padding: 5px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #F6F9F8;
+    border: none;
+}
+
+@media (max-width: 1201px) {
+    #about-me li {
+        height: 66px;
+    }
+}
+
+.skill-l {
+    font-weight: 800;
     font-size: 1.2em;
 }
 
-@media (max-width: 1199px) {
-    .about-me {
-        background: url(../media/portrait-lg.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;   
-    }
+.skill-m {
+    font-weight: 600;
 }
 
+.skill-s {
+    font-size: 0.9em;
+}
+
+.style-a-l { background-color: #4E7EAE; }
+.style-a-m { background-color: #395C7F; }
+.style-a-s { background-color: #2B455F; }
+.style-b-l { background-color: #B73359; }
+.style-b-m { background-color: #862641; }
+.style-b-s { background-color: #641C31; }
+.style-c-l { background-color: #6A6394; }
+.style-c-m { background-color: #554F76; }
+.style-c-s { background-color: #403B59; }
+.style-d-l { background-color: #5F6369; }
+.style-d-m { background-color: #4D5258; }
+.style-d-s { background-color: #3C4148; }
+
+/*
+#4E7EAE
+#395C7F
+#2B455F
+
+#B73359
+#862641
+#541829
+
+#6A6394
+#554F76
+#403B59
+
+#595B63
+#45464D
+#323237
+*/
 @media (max-width: 991px) {
-    .about-me .col-md-6 {
-        width: 45%;
+    #about-me #intro, #about-me #portrait {
+        float: right;
+        clear: left;
+    }
+    #about-me #intro{
+        width: 50%;
     }
     
-    .about-me {
-        background-size: 80% auto;
+    #about-me #intro h2 {
+        margin-top: 0;
+    }
+    #about-me #portrait {
+        width: 45%;
+        margin-right: 5%;
+        margin-bottom: 2em;
     }
 
 }
 
 @media (max-width: 767px) {
-    .about-me {
-        background-image: none;
-    }
-    .about-me .col-md-6 {
+    #about-me #intro, #about-me #portrait {
+        clear: both;
+        float: none;
         width: 100%;
+        margin: 0;
     }
     
-    .about-me img {
-        margin-top: 1em;
-        max-width: 340px;
+    #about-me #portrait {
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
     }
     
-    .about-me .visible-xs {
-        text-align:center;
+    #about-me ul {
+        flex-flow: row wrap;
     }
     
+    #about-me li {
+        flex: 1;
+        width: 95px;
+    }
+    
+    .skill-l {
+        font-size: 1em;
+    }
+    
+    .skill-m {
+        font-size: .9em;
+    }
+    
+    .skill-l {
+        font-size: .8em;
+    }
 }
 
-#skills, #others {
+#skills, #others, header {
     position: relative;
-    background-color: white;
+    background-color: #F6F9F8;
 }
 
 #skills {
     z-index: 8;
 }
 
+/*
 .skill-l, .skill-m, .skill-s {
     text-align: center;
-    color: #E3EDE9;
-    border: 5px solid white;
+    color: #F6F9F8;
+    border: 5px solid #F6F9F8;
     border-top: none;
     border-left: none;
 }
@@ -512,6 +599,7 @@ header #nav-down img {
     font-size: 14px;
     background-color: #5F6369;
 }
+*/
 
 
 /*
@@ -526,7 +614,7 @@ header #nav-down img {
     width: 100px;
     height: 100px;
     background-color: #3C4148;
-    color: #E3EDE9;
+    color: #F6F9F8;
     margin-top: 0px;
     font-size: 15px;
     margin-bottom: 4px;
@@ -560,7 +648,7 @@ header #nav-down img {
 
 #portfolio figure figcaption h5, #portfolio figure figcaption p {
     margin: 0;
-    color: white;
+    color: #F6F9F8;
 }
 
 #portfolio figure figcaption h5 {
@@ -752,7 +840,7 @@ header #nav-down img {
 }
 
 #contact-me ul li a p{
-    color: white;
+    color: #F6F9F8;
     padding: 5px;
     position: relative;
     display: inline;
