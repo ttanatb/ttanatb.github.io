@@ -1,4 +1,35 @@
-$(document).ready(function()
+$(document).ready(function() {
+    var resize = function() {
+        var padding = $("header").innerHeight() - $("header").height();
+        $("header").css("padding-top", ($("header").innerHeight() / 2) - ($("#header-wrapper").height() / 2));
+    }
+    resize();
+    $(window).resize(resize);
+
+    $("#header-wrapper").addClass("rotateSquare");
+    $("#bot-square").delay(400).animate({
+        top : "+=100px"
+    }, 500, "swing");
+
+    $("#top-square").delay(400).animate({
+        top : "-=100px"
+    }, 500, "swing");
+
+    $("#divider").delay(700).animate({
+        opacity: 1.0
+    }, 100, "swing");
+
+    var dividerW = "+=" + $("#top-square").outerWidth() * 1.5 + "px";
+    $("#divider").animate({
+        width: dividerW
+    }, 500, "swing");
+
+    $("#title, #description").delay(1150).animate({
+        opacity: 1.0
+    }, 250, "swing");
+});
+
+/*$(document).ready(function()
 {
 	var objects = [$("nav"), $("#welcome"), $("#welcome h1"), $("#welcome h1 small"), $("#about-me"), $("#projects"), $("#other-works"), $("footer")]
 	var delays = [400, 500, 500, 500, 800, 800, 800, 800];
@@ -15,8 +46,6 @@ $(document).ready(function()
 		}
 	}
 });
-
-/*
 {
 	$("a[href='#top']").click(function() {
 	  $("html, body").animate({ scrollTop: 0 }, "fast");

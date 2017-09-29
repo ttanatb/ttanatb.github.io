@@ -5,56 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/media/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/media/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/media/manifest.json">
+    <link rel="mask-icon" href="/media/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     
 
+    <!-- jQuery & BootStrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
+    
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
     <title>Tanat Boozayaangool</title>
-    <script>
-        $(document).ready(function() {
-            var resize = function() {
-                var padding = $("header").innerHeight() - $("header").height();
-                $("header").css("padding-top", ($("header").innerHeight() / 2) - ($("#header-wrapper").height() / 2));
-            }
-            resize();
-            $(window).resize(resize);
-            
-            $("#header-wrapper").addClass("rotateSquare");
-            $("#bot-square").delay(400).animate({
-                top : "+=100px"
-            }, 500, "swing");
-            
-            $("#top-square").delay(400).animate({
-                top : "-=100px"
-            }, 500, "swing");
-            
-            $("#divider").delay(700).animate({
-                opacity: 1.0
-            }, 100, "swing");
-            
-            var dividerW = "+=" + $("#top-square").outerWidth() * 1.5 + "px";
-            $("#divider").animate({
-                width: dividerW
-            }, 500, "swing");
-            
-            $("#title, #description").delay(1150).animate({
-                opacity: 1.0
-            }, 250, "swing");
-        });
-    </script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <img class="hidden" src="media/github-over.png" alt="Hidden to hasten load time" />
