@@ -5,15 +5,24 @@ $(document).ready(function() {
     }
     resize();
     $(window).resize(resize);
+    
+    $("#nav-down").click(function() {
+       $("html, body").animate({
+           scrollTop: $("#about-me").offset().top - 20
+       }, 500); 
+    });
 
     $("#header-wrapper").addClass("rotateSquare");
-    $("#bot-square").delay(400).animate({
-        top : "+=100px"
-    }, 500, "swing");
+    $("#bot-square").delay(700).animate({
+        top : "+=75px",
+    }, 300, "linear");
 
-    $("#top-square").delay(400).animate({
-        top : "-=100px"
-    }, 500, "swing");
+    $("#top-square").delay(700).animate({
+        top : "-=75px",
+    }, 300, "linear", function() {
+        $("#top-square").addClass("fade-top");
+        $("#bot-square").addClass("fade-bot");
+    });
 
     $("#divider").delay(700).animate({
         opacity: 1.0
@@ -26,6 +35,11 @@ $(document).ready(function() {
 
     $("#title, #description").delay(1150).animate({
         opacity: 1.0
+    }, 250, "swing");
+    
+    $("#nav-down").delay(1500).animate({
+        opacity:1.0,
+        bottom: "+=20px"
     }, 250, "swing");
 });
 
