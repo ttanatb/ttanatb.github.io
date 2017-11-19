@@ -652,6 +652,14 @@ header #nav-down img:hover {
     z-index: 7;
 }
 
+.featured {
+    margin-bottom: 7em;
+}
+
+.featured h3 {
+    margin-top: 0;
+}
+
 .vimeo {
     width: 682px;
     height: 415px;
@@ -659,6 +667,7 @@ header #nav-down img:hover {
     display: inline;
     float: left;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 #youtube-player {
@@ -672,11 +681,17 @@ header #nav-down img:hover {
         width: 535px;
         height: 350px;
     }
+    .featured {
+        margin-bottom: 4em;
+    }
 }
 @media (max-width: 991px) {
     .vimeo{
         width: 407px;
         height: 300px;
+    }
+    .featured {
+        margin-bottom: 3em;
     }
 }
 
@@ -686,6 +701,10 @@ header #nav-down img:hover {
         height: 250px;
         width: 100%;
         clear: both;
+        margin-bottom: 2em;
+    }
+    
+    .featured {
         margin-bottom: 2em;
     }
 }
