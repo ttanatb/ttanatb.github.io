@@ -711,6 +711,8 @@ header #nav-down img:hover {
     width: 720px !important;
     margin: 0 auto;
     background-color: black !important;
+    text-align: left !important;
+    padding: 5px !important;
 }
 
 @media (max-height: 475px) {
@@ -718,18 +720,26 @@ header #nav-down img:hover {
         bottom: 0% !important;
     }
 }
-.lg-sub-html h5, .lg-sub-html p {
+.lg-sub-html h5, .lg-sub-html h4, .lg-sub-html p {
     color: #F6F9F8;
-
 }
 
 .lg-sub-html h5 {
     font-weight: 600;
-    margin-bottom: 0.4em;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
-.lg-sub-html a {
+.lg-sub-html h4 {
+    font-weight: 300 !important;
+    font-size: 15px !important;
+    font-style: italic;
+    margin-bottom: 10px !important;
+}
+
+.lg-sub-html a, .lg-sub-html p {
     text-decoration: none;
+    font-size: 13.5px !important;
 }
 
 #captions {
