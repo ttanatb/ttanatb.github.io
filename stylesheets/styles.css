@@ -97,7 +97,7 @@ section {
 }
 
 header, #contact-me, #portfolio, #others, #about-me {
-    box-shadow: 0px 20px 20px rgba(0,0,0,0.2);
+/*    box-shadow: 0px 20px 20px rgba(0,0,0,0.2);*/
     position: relative;
 }
 
@@ -264,11 +264,10 @@ button.navbar-toggle:hover > span {
 header {
     max-height: 900px;
 	height: 98vh;
-    padding-top: 175px;
+    padding-top: 190px;
     background-repeat: no-repeat;
     background-position: bottom left;
     z-index: 0;
-    transition: all 0.5s ease 0s;
 }
 
 header #nav-down {
@@ -315,11 +314,11 @@ header #nav-down img:hover {
 
 #header-wrapper {
     transition: all 1s ease 0s;
-    transform: rotate(-90deg);
+/*    transform: rotate(-90deg);*/
 }
 
 .rotateSquare {
-    transform: rotate(0deg) !important;
+/*    transform: rotate(0deg) !important;*/
 }
 
 #top-square, #bot-square {
@@ -329,11 +328,14 @@ header #nav-down img:hover {
     border-left: solid transparent;
     border-right: solid transparent;
     position: relative;
+    opacity: 1.0;
+    top: 0px;
 }
 
+/*
 .fade-top, .fade-bot {
     opacity: 0.0;
-    transition: 0.5s ease-out;
+    transition: all 1s ease 0s;
 }
 
 .fade-top {
@@ -343,6 +345,7 @@ header #nav-down img:hover {
 .fade-bot {
     top: 68px!important;
 }
+*/
 
 #top-square {
     border-bottom: solid #292F36;
@@ -444,7 +447,7 @@ header #nav-down img:hover {
     background-color: #F1F6F4;
 }
 
-#about-me {
+#about-me, #others {
     position: relative;
     z-index: 10;
     background-color: #292F36;
@@ -452,7 +455,7 @@ header #nav-down img:hover {
     box-shadow: 0px 0px 50px rgba(0,0,0,0.6);
 }
 
-#about-me p, #about-me h2, #about-me h3, #about-me li {
+#about-me p, #about-me h2, #about-me h3, #about-me li, #others p, #others h2, #others h4 {
     color: #F6F9F8;
 }
 
@@ -582,7 +585,7 @@ header #nav-down img:hover {
     }
 }
 
-#skills, #others, header {
+#skills, header {
     position: relative;
     background-color: #F6F9F8;
 }
@@ -890,9 +893,6 @@ header #nav-down img:hover {
 }
 */
 
-#others {
-    z-index: 6;
-}
 #egf-logo, #posters {
     float: right;
     margin-left: 15px;
@@ -912,10 +912,13 @@ header #nav-down img:hover {
     float: left;
 }
 
+#others h4 {
+    font-weight: 800;
+}
 
 #others hr {
     margin-bottom: 2em;
-    border-top-color: rgba(41,47,54,.1);
+    border-top-color: rgba(255,255, 255,.1);
 }
 
 @media (max-width: 767px) {
@@ -1052,4 +1055,5 @@ header #nav-down img:hover {
     color: #F1F6F4;
     margin-bottom: 0;
     padding: 0.5em 0;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.6);
 }

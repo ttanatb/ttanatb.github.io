@@ -8,25 +8,27 @@ $(document).ready(function() {
     resize();
     $(window).resize(resize);
     
-    $("#nav-down").click(function() {
-       $("html, body").animate({
-           scrollTop: $("#about-me").offset().top - 20
-       }, 500); 
-    });
+//    $("#nav-down").click(function() {
+//       $("html, body").animate({
+//           scrollTop: $("#about-me").offset().top - 20
+//       }, 500); 
+//    });
 
-    $("#header-wrapper").addClass("rotateSquare");
-    $("#bot-square").delay(700).animate({
-        top : "+=75px",
-    }, 300, "linear");
+//    $("#top-square").addClass("fade-top");
+//    $("#bot-square").addClass("fade-bot");
+    
+    
+    $("#top-square").delay(100).animate({
+        top: "-76px",
+        opacity: 0.0
+    }, 500, "swing");
+    
+    $("#bot-square").delay(100).animate({
+        top: "76px",
+        opacity: 0.0
+    }, 500, "swing");
 
-    $("#top-square").delay(700).animate({
-        top : "-=75px",
-    }, 300, "linear", function() {
-        $("#top-square").addClass("fade-top");
-        $("#bot-square").addClass("fade-bot");
-    });
-
-    $("#divider").delay(700).animate({
+    $("#divider").delay(100).animate({
         opacity: 1.0
     }, 100, "swing");
 
@@ -35,23 +37,23 @@ $(document).ready(function() {
         width: dividerW
     }, 500, "swing");
 
-    $("#title, #description").delay(1150).animate({
+    $("#title, #description").delay(650).animate({
         opacity: 1.0
     }, 250, "swing");
     
-    $("#nav-down").delay(1500).animate({
-        opacity:1.0,
-        bottom: "+=20px"
-    }, 250, "swing");
+//    $("#nav-down").delay(1500).animate({
+//        opacity:1.0,
+//        bottom: "+=20px"
+//    }, 250, "swing");
     
-    $("#youtube-player").click(function() {
-        console.log("ASDFADS");
-        $(".ytp-youtube-button").hide();
-    });
-    
-    if ($("#youtube-player") != undefined) {
-        console.log("ASDFADdddS");
-    }
+//    $("#youtube-player").click(function() {
+//        console.log("ASDFADS");
+//        $(".ytp-youtube-button").hide();
+//    });
+//    
+//    if ($("#youtube-player") != undefined) {
+//        console.log("ASDFADdddS");
+//    }
     
 });
 
