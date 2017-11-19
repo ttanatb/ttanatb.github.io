@@ -15,9 +15,19 @@
 
     <!-- jQuery & BootStrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
+    
+    <!-- Lightgallery plug-in -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/css/lightgallery.min.css" /> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/js/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/js/lightgallery-all.min.js"></script>
+
+    <!-- lightgallery plugins -->
+
     
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,14 +59,16 @@
             <div id="top-square"></div>
                 <h1 id="title">Tanat Boozayaangool</h1>
                 <hr id="divider"/>
-                <h2 id="description">AR/VR Developer</h2>
+                <h2 id="description">Gameplay Programmer - AR/VR Developer</h2>
             <div id="bot-square"></div>
         </div>
     </div>
     <img id="header-corner-2" alt="header-corner" src="media/header-corner.png"/>
+<!--
     <span id="nav-down">
         <img alt="Downward Navigation" src="media/down-image.png" id="down-nav"/>
     </span>
+-->
 </header>
 <section id="about-me">
     <div class="container">
@@ -128,204 +140,100 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-12">
                 <iframe src="https://player.vimeo.com/video/226322426" class="vimeo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <div class="col-lg-5">
-                <h4>Description</h4>
-                <p>Unified Reality is a platform that exposes a virtual reality experience and shares it to other users through augmented reality and projection mapping.</p>
+                <h4 class="proj-desc">Description</h4>
+                <p>Unified Reality is a platform that exposes a virtual reality experience and shares it to other users through augmented reality and projection mapping. This project was completed as part of my internship with BitStudio and the team consisted of two other full-time employees and I.</p>
                 
                 <h4>Role & Responsibilities</h4>
-                <p>I was in charge of building the augmented reality application for the project. This mainly included integrating iOS ARKit, reading networked data, and displaying a character's pose based off of the position of a VR controller and headset.</p>
+                <p>I was in charge of building the augmented reality application for the project. This mainly included integrating iOS ARKit, reading networked data, and displaying a character's pose based off of the data that's given from the VR headest and the controllers.</p>
                 
                 <em>
                 <p>This project was featured at Techsauce Global Summit 2017 and was used to connect BitStudio with over 30 other companies and investors.</p>
                 </em>
             </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>VArm - <em>Unity, C#, Oculus Rift</em></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cmgzdzC_y5g?rel=0&amp;showinfo=0" class="vimeo" id="youtube-player" frameborder="0" ></iframe>
+                <h4 class="proj-desc">Description</h4>
+                <p>VArm is a tool for medical profesionals to study anatomy using virtual reality. This was a group project for a research studio.</p>
+                
+                <h4>Role & Responsibilities</h4>
+                <p>I was one of the lead developers for the project and I was involved with building the code infrastructure for the project. Additionally, I also delegated tasks to each team member and facilitated communication within the group. One of the features I worked on was a way to position each limb based on the rotation of its parent joint and to fire any associated blendshapes.</p>
+                
+                <em>
+                <p>This was featured at Imagine RIT (a campus-wide event to showcase the innovative and creative spirit of RIT students, faculty, and staff).</p>
+                </em>
+            </div>
         </div>
         <hr />
-        <!--
         <div class="row">
-            <div class="col-sm-4">
-                <h3>Unified Reality - <em>Unity, C#, iOS ARKit</em></h3>
-                <h4>Poop</h4>
-                <p>Role in the project</p>
-                
-                <p>This project was featured at Techsauce Global Summit 2017 and was used to connect BitStudio with over 30 other companies and investors.</p>
-            </div>
-            <div class="col-sm-8">
-                <iframe src="https://player.vimeo.com/video/226322426" class="vimeo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="col-xs-12">
+            <h2>Here's some other projects:</h2>
             </div>
         </div>
--->
-
-        <div class="row hidden-xs">
-            <div class="col-xs-4">
-                <a href="https://github.com/spectrix/SanDefense" target="_blank">
-                    <figure>
-                    <img src="media/projgif-sandefense.gif" alt="SanDefense" />
-                        <figcaption>
-                            <h5>SanDefense (C#, Unity) - Group</h5>
-                            <p>
-                                This Global Game Jam '17 submission is a tower defense game where you build sand castles to fight off hermit crabs. After each wave, the ocean would wash up debris, forcing the player to adapt.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-xs-4">
-                <a href="https://github.com/ttanatb/Fantasy-Forest" target="_blank">
-                    <figure>
-                    <img src="media/projgif-fantasy-forest.gif" alt="Fantasy Forest" />
-                        <figcaption>
-                        <h5>Fantasy Forest <br class="hidden-lg hidden-md"/> (C#, Unity) - Solo</h5>
-                        <p>
+        <div class="row">
+           <div class="col-xs-12">
+               <div id="captions">
+                   <div id="sanDefense">
+                       <h5>SanDefense (C#, Unity) - Group</h5>
+                       <p>
+                           This Global Game Jam '17 submission is a tower defense game where you build sand castles to fight off hermit crabs. After each wave, the ocean would wash up debris, forcing the player to adapt.
+                       </p>
+                   </div>
+                   <div id="fantasyForest">
+                       <h5>Fantasy Forest  (C#, Unity) - Solo</h5>
+                       <p>
                             A simulation which implements Craig Reynold's steering behaviors (such as complex path following and flocking) to create agents acting out a typical scene from an MMORPG forest. 
                         </p>
-                        </figcaption>
-                    </figure>
-            </a>
-            </div>
-            <div class="col-xs-4">
-
-                    <figure>
-                    <img src="media/projgif-Varm.gif" alt="Varm"/>
-                        <figcaption>
-                        <h5>V-Arm<br class="hidden-lg hidden-md" /> (C#, Oculus Rift) - Class Project</h5>
-                        <p>
-                            A VR anatomy application that aims to help medical students or animation students by facilitating learning through virtual interactions.
-                        </p>
-                        </figcaption>
-                    </figure>
-            </div>
-        </div>
-        <div class="row hidden-xs">
-            <div class="col-xs-4">
-                <a href="https://github.com/TalCohen/cshgamejam2016" target="_blank" >
-                    <figure>
-                    <img src="media/projgif-gamejam.gif" alt="Game Jam"/>
-                        <figcaption>
-                            <h5>Game Jam (C#, Unity) - Group</h5>    
-                            <p>
-                                Made within 24 hours, this is a team-based game in which two players must coordinate to cast the correct spell and navigate the little mage through hordes of eneimes.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-
-            <div class="col-xs-4">
-                <a href="https://github.com/ttanatb/Virtual-Garden" target="_blank">
-                    <figure>
-                    <img src="media/projgif-virtual-garden.gif" alt="Virtual Garden"/>
-                        <figcaption>
-                        <h5>Virtual Garden (JavaScript, Canvas) - Solo</h5>
-                        <p>
-                            An interactive artwork based inspired from concepts of Gestalt Psychology. This black-and-white garden utilizes perlin noise to create life-like, soothing appearances and behaviors.
-                        </p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-xs-4">
-                <a href="https://github.com/ttanatb/blank-canvas" target="_blank" >
-                    <figure>
-                    <img src="media/blankcanvas.png" alt ="Blank Canvas"/>
-                        <figcaption>
-                        <h5>Blank Canvas <br class="hidden-lg hidden-md" /> (C#, MonoGame) - Group</h5>
-                        <p>
-                            A platformer game where the player must dr>ain color away from the enemy and combine them to solve puzzles and bring color back to this child-like world.
-                        </p>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </div>
-        <div class="row visible-xs">
-            <div class="col-sm-12">
-                <figure>
-                    <img src="media/proj-sandefense.png" alt="SanDefense" />
-                    <figcaption>
-                        <h5>SanDefense (C#, Unity) - Group</h5>
-                        <p>
-                            This Global Game Jam '17 submission is a tower defense game where you build sand castles to fight off hermit crabs. After each wave, the ocean would wash up debris, forcing the player to adapt.
-                        </p>
-                        <a class="btn btn-style-inverse" href="https://github.com/spectrix/SanDefense" target="_blank" role="button">Check it out on GitHub!</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="media/proj-fantasy-forest.png" alt="Fantasy Forest" />
-                    <figcaption>
-                        <h5>Fantasy Forest (C#, Unity) - Solo</h5>
-                        <p>
-                            A simulation which implements Craig Reynold's steering behaviors (such as complex path following and flocking) to create agents acting out a typical scene from an MMORPG forest. 
-                        </p>
-                        <a class="btn btn-style-inverse" href="https://github.com/ttanatb/Fantasy-Forest" target="_blank" role="button">Check it out on GitHub!</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="media/proj-Varm.png" alt="Varm" />
-                    <figcaption>
-                        <h5>V-Arm (C#, Oculus Rift) - Class Project</h5>
-                        <p>
-                            A VR anatomy application that aims to help medical students or animation students by facilitating learning through virtual interactions.
-                        </p>
-                <a class="btn btn-style-inverse" href="https://github.com/ttanatb/Fantasy-Forest" target="_blank" role="button">Check it out on GitHub!</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="media/proj-gamejam.png" alt="Game Jam" />
-                    <figcaption>
-                        <h5>Game Jam (C#, Unity) - Group</h5>    
-                        <p>
+                   </div>
+                   <div id="gameJam">
+                       <h5>Game Jam(C#, Unity) - Group</h5>
+                       <p>
                             Made within 24 hours, this is a team-based game in which two players must coordinate to cast the correct spell and navigate the little mage through hordes of eneimes.
                         </p>
-                        <a class="btn btn-style-inverse" href="https://github.com/TalCohen/cshgamejam2016" target="_blank" role="button">Check it out on GitHub!</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="media/proj-virtual-garden.png" alt="Virtual Garden" />
-                    <figcaption>
+                   </div>
+                   <div id="virtualGarden">
                        <h5>Virtual Garden (JavaScript, Canvas) - Solo</h5>
                         <p>
                             An interactive artwork based inspired from concepts of Gestalt Psychology. This black-and-white garden utilizes perlin noise to create life-like, soothing appearances and behaviors.
                         </p>
-                        <a class="btn btn-style-inverse" href="https://github.com/ttanatb/Virtual-Garden" target="_blank" role="button">Check it out on GitHub!</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="media/proj-blankcanvas.png" alt="Blank Canvas" />
-                    <figcaption>
-                        <h5>Blank Canvas (C#, MonoGame) - Group</h5>
+                   </div>
+                   <div id="blankCanvas">
                         <p>
                             A platformer game where the player must dr>ain color away from the enemy and combine them to solve puzzles and bring color back to this child-like world.
                         </p>
-                        <a class="btn btn-style-inverse" href="https://github.com/ttanatb/blank-canvas" target="_blank" role="button">Check it out on GitHub!</a>
-                    </figcaption>
-                </figure>
-<!--
-                <figure>
-                    <img src="media/proj-2d-physics.png" alt="2D Hackathon" />
-                    <figcaption>
-                         <a class="github-logo visible-md visible-lg" href="https://github.com/ttanatb/2d-physics" target="_blank"></a>
-                        <h5>2D-Physics (C#, MonoGame)</h5>
-                        <p class="visible-lg">
-                            Started from a Hackathon, <br />
-                            this project explores the different <br />
-                            techniques used to simulate physics <br />
-                            in a 2D space. <br />
-                        </p>
-                        <p class="hidden-lg">
-                            Started from a Hackathon, <br class="visible-md"/>
-                            this project explores the different <br class="visible-md"/>
-                            techniques used to simulate physics <br class="visible-md"/>
-                            in a 2D space. <br class="visible-md"/>
-                        </p>
-                         <a class="btn btn-default visible-xs visible-sm" href="https://github.com/ttanatb/2d-physics" target="_blank" role="button">Check it out on GitHub!</a>                          
-                    </figcaption>
-                </figure>
-            -->
-
+                   </div>
+               </div>
+                <div class="subFlex">
+                    <a class="project" href="media/proj-sandefense.png" data-sub-html="#sanDefense">
+                        <img class="img-responsive" src="media/projgif-sandefense.gif">
+                    </a>
+                    <a class="project" href="media/proj-fantasy-forest.png" data-sub-html="#fantasyForest">
+                        <img class="img-responsive" src="media/projgif-fantasy-forest.gif">
+                    </a>
+                    <a class="project" href="#" data-sub-html="filler content">
+                        <img class="img-responsive" src="media/coming.png" />
+                    </a>
+                </div>
+                <div class="subFlex">
+                    <a class="project" href="media/proj-gamejam.png" data-sub-html="#gameJam">
+                        <img class="img-responsive" src="media/projgif-gamejam.gif">
+                    </a>
+                    <a class="project" href="media/proj-virtual-garden.png" data-sub-html="#virtualGarden">
+                        <img class="img-responsive" src="media/projgif-virtual-garden.gif">
+                    </a>
+                    <a class="project" href="media/proj-blankcanvas.png" data-sub-html="#blankCanvas">
+                        <img class="img-responsive" src="media/blankcanvas.png">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -337,55 +245,36 @@
                 <h2>Other things about me</h2>
             </div>
         </div>
-<!--
-        <div class="row">
-            <div class="col-sm-4">
-                <h4>International Ambassador</h4>
-                <p>I'll be attending GDC 2017 (Game Developer Conference) as an International Ambassador! You can learn more about being an International Ambassador <a href="http://www.internationalambassadors.us/" target="_blank">here</a>.</p>
-            </div>
-            <div class="col-sm-8">
-            </div>
-        </div>
--->
         <div class="row">    
-            <div class="col-sm-5">
-                <h4>Writing</h4>
-                <p>I write bi-weekly articles for Electronic Gaming Federation where I explore the mechanics of Hearthstone and try to give a different perspective to the game. You can view some of my articles <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank">here</a>.</p>
-                <img class="visible-xs" src="media/egf-small.png"/>
-                <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank" class="btn btn-style btn-left" role="button">View More</a>
-            </div>
-            <div class="col-sm-7">
-                <img class="hidden-xs hidden-sm" src="media/egf.png" />
-                <img class="visible-sm" src="media/egf-md.png" />
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-7 hidden-xs">
-                <img class="hidden-xs hidden-sm" src="media/posters.png" />
-                <img class="visible-sm" src="media/posters-md.png" />
-            </div>
-            <div class="col-sm-5">
-                <h4>Graphic Design</h4>
-                <p>I really enjoy using Adobe Illustrator, especially when I get money for doing so. You can view some of work through my <a href="https://www.behance.net/tanatb" target="_blank">Be&#772;hance</a>.</p>
-                <img class="visible-xs" src="media/posters-small.png"/>
-                <a href="https://www.behance.net/tanatb" target="_blank" class="btn btn-style" role="button">View More</a>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-4">
-                <h4>Resdient Advisor</h4>
-                <p>I overlook a bunch of students and help build a positive learning environment for them.</p>
-            </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 other-stuff">
+                <img id="egf-logo" src="media/ia-logo.png"/>
                 <h4>International Ambassador</h4>
-                <p>I attended GDC (Game Developer Conference) 2017 as an International Ambassador! Learn more <a href="http://www.internationalambassadors.us/" target="_blank">here</a>.
+                <p>I attended GDC (Game Developer Conference) 2017 as an International Ambassador! Our mission is to help foster game development communities in areas with little support for game development. Learn more <a href="http://www.internationalambassadors.us/" target="_blank">here</a>.
                 </p>
             </div>
+            <div class="col-sm-6 ">
+                <img id="posters" src="media/posters.png" />
+                <h4>Graphic Design</h4>
+                <p>I really enjoy using Adobe Illustrator, especially when I get money for doing so. You can view some of work through my <a href="https://www.behance.net/tanatb" target="_blank">Be&#772;hance</a>.</p>
+<!--                <a href="https://www.behance.net/tanatb" target="_blank" class="btn btn-style btn-left" role="button">View More</a>-->
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="row">
             <div class="col-sm-4">
-                <h4>And much more!</h4>
-                <p>Get in touch with me to learn more!</p>
+                <!--<img id="egf-logo" src="media/ia-logo.png"/>-->
+                <h4>Writing</h4>
+                <p>I used to write <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank">bi-weekly articles</a> for Electronic Gaming Federation that explores the mechanics of Hearthstone and gives different perspectives to it.</p>
+            </div>
+            <div class="col-sm-4">
+                <h4>Resdient Advisor</h4>
+                <p>I overlook a bunch of students and help build a positive environment by guiding them towards appropriate resources (such as those for mental health concerns).</p>
+            </div>
+            <div class="col-sm-4">
+                <h4>Teaching Assitant</h4>
+                <p>I help guide students through a web-based games development class. I've also been told that I'm a tough grader ¯\_(ツ)_/¯</p>
             </div>
         </div>
     </div>

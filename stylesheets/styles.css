@@ -620,10 +620,6 @@ header #nav-down img:hover {
     font-size: 14px;
     background-color: #5F6369;
 }
-*/
-
-
-/*
 #skills ul {
     list-style: none;
     padding: 0;
@@ -653,26 +649,137 @@ header #nav-down img:hover {
 }
 
 .vimeo {
-    width: 100%;
+    width: 682px;
     height: 415px;
+    background-color: black;
+    display: inline;
+    float: left;
+    margin-right: 20px;
 }
+
+#youtube-player {
+    float: right;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
 @media (max-width: 1201px) {
-        .vimeo{
+    .vimeo{
+        width: 535px;
         height: 350px;
     }
 }
 @media (max-width: 991px) {
     .vimeo{
+        width: 407px;
         height: 300px;
     }
 }
 
 
-@media (max-width: 481px) {
+@media (max-width: 628px) {
     .vimeo{
-        height: 200px;
+        height: 250px;
+        width: 100%;
+        clear: both;
+        margin-bottom: 2em;
     }
 }
+
+.subFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.project {
+    margin-bottom: 20px;
+    width: 360px;
+    height: 360px;
+}
+
+.proj-desc {
+    margin-top: 0;
+}
+
+.lg-autoplay-button, .lg-fullscreen, #lg-share, #lg-actual-size, #lg-zoom-in, #lg-zoom-out, #lg-download, .lg-progress-bar, .lg-thumb-outer, #lg-counter, .lg-actions{
+    display: none !important;
+}
+
+.lg-sub-html {
+    bottom: 15% !important;
+    width: 720px !important;
+    margin: 0 auto;
+    background-color: black !important;
+}
+
+@media (max-height: 475px) {
+    .lg-sub-html {
+        bottom: 0% !important;
+    }
+}
+.lg-sub-html h5, .lg-sub-html p {
+    color: #F6F9F8;
+
+}
+
+.lg-sub-html h5 {
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+.lg-sub-html a {
+    text-decoration: none;
+}
+
+#captions {
+    display: none;
+}
+
+@media (max-width: 1201px) {
+    .project {
+        width: 293px;
+        height: 293px;
+    }
+}
+
+@media (max-width: 991px) {
+    .project {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .subFlex {
+        flex-flow: row nowrap;
+        flex-basis: auto;
+    }
+    .project {
+        margin-left: 10px;
+        height: auto;
+    }
+
+    .subFlex > .project:first-child {
+        margin-left: 0px;
+    }
+    
+    .lg-sub-html {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .subFlex {
+        display: block;
+    }
+    
+    .lg-sub-html {
+        bottom: 0% !important;
+    }
+}
+
+/*
 #portfolio figure {
     transition: all 0.2s ease 0s;
 }
@@ -688,20 +795,6 @@ header #nav-down img:hover {
     transition: all 0.2s ease 0s;
 }
 
-#portfolio figure figcaption h5, #portfolio figure figcaption p {
-    margin: 0;
-    color: #F6F9F8;
-}
-
-#portfolio figure figcaption h5 {
-    font-weight: 600;
-    margin-bottom: 0.4em;
-}
-
-#portfolio a {
-    text-decoration: none;
-}
-
 #portfolio figure:hover > figcaption {
     background-position: bottom left;
     top: -130px;
@@ -712,6 +805,7 @@ header #nav-down img:hover {
 #portfolio figure:hover {
     margin-bottom: -110px;
 }
+
 
 .github-logo {
     float: right;
@@ -728,7 +822,6 @@ header #nav-down img:hover {
 }
 
 @media (max-width: 1201px) {
-    
     #portfolio figure figcaption {
         padding-left: 0.8em;       
     }
@@ -785,18 +878,30 @@ header #nav-down img:hover {
         margin: 1em 0 0;
     }
 }
+*/
 
 #others {
     z-index: 6;
 }
+#egf-logo, #posters {
+    float: right;
+    margin-left: 15px;
+}
+
+#posters {
+    width: 200px;
+}
+
+#egf-logo {
+    width: 100px;
+    height: 100px;
+
+}
 
 #others .btn {
-    float: right;
-}
-
-#others .btn-left {
     float: left;
 }
+
 
 #others hr {
     margin-bottom: 2em;
@@ -806,15 +911,11 @@ header #nav-down img:hover {
 @media (max-width: 767px) {
     #others .btn {
         display: block;
-        width: 100%;
-        margin-top: 2em;
+        clear: both;
     }
     
-    img {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
+    #others .other-stuff {
+        margin-bottom: 2em;
     }
 }
 

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $(".subFlex").lightGallery(); 
+
     var resize = function() {
         var padding = $("header").innerHeight() - $("header").height();
         $("header").css("padding-top", ($("header").innerHeight() / 2) - ($("#header-wrapper").height() / 2));
@@ -41,6 +43,16 @@ $(document).ready(function() {
         opacity:1.0,
         bottom: "+=20px"
     }, 250, "swing");
+    
+    $("#youtube-player").click(function() {
+        console.log("ASDFADS");
+        $(".ytp-youtube-button").hide();
+    });
+    
+    if ($("#youtube-player") != undefined) {
+        console.log("ASDFADdddS");
+    }
+    
 });
 
 /*$(document).ready(function()
