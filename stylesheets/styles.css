@@ -668,6 +668,12 @@ header #nav-down img:hover {
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.vimeo > img {
+    height: 100%;
+    width: auto;
 }
 
 #youtube-player {
