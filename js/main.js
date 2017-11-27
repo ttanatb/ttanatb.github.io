@@ -1,5 +1,7 @@
 $(document).ready(function() {
     $(".subFlex").lightGallery(); 
+    
+    //lightbox.html("<div class='subFlex'>" + lightbox.html() + "</div>");
 
     var resize = function() {
         var padding = $("header").innerHeight() - $("header").height();

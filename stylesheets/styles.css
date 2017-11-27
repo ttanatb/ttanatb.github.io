@@ -725,7 +725,7 @@ header #nav-down img:hover {
     margin-top: 0;
 }
 
-.lg-autoplay-button, .lg-fullscreen, #lg-share, #lg-actual-size, #lg-zoom-in, #lg-zoom-out, #lg-download, .lg-progress-bar, .lg-thumb-outer, #lg-counter, .lg-actions{
+.lg-autoplay-button, .lg-fullscreen, #lg-share, #lg-actual-size, #lg-zoom-in, #lg-zoom-out, #lg-download{
     display: none !important;
 }
 
@@ -783,32 +783,48 @@ header #nav-down img:hover {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 752px) {
     .subFlex {
-        flex-flow: row nowrap;
-        flex-basis: auto;
+        justify-content: space-evenly;
+        
     }
+
     .project {
-        margin-left: 10px;
+        width: 180px;
         height: auto;
     }
 
-    .subFlex > .project:first-child {
-        margin-left: 0px;
-    }
-    
     .lg-sub-html {
         width: 100% !important;
     }
 }
 
-@media (max-width: 450px) {
-    .subFlex {
-        display: block;
+@media (max-width: 640px) {
+    .project {
+        width: 150px;
     }
-    
+}
+
+@media (max-width: 550px) {
+    .project {
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .project {
+        display: block;
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto 1em;
+    }
     .lg-sub-html {
         bottom: 0% !important;
+    }
+    
+    .lg-thumb-outer {
+        display: none;
     }
 }
 
