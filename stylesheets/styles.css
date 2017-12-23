@@ -734,12 +734,18 @@ header #nav-down img:hover {
 .lg-autoplay-button, .lg-fullscreen, #lg-share, #lg-actual-size, #lg-zoom-in, #lg-zoom-out, #lg-download{
     display: none !important;
 }
+.lg-backdrop {
+    opacity: 0.92 !important;
+}
 
+.lg-prev, .lg-next {
+    background-color: transparent !important;
+}
 .lg-sub-html {
     bottom: 15% !important;
     width: 720px !important;
     margin: 0 auto;
-    background-color: black !important;
+    background-color: transparent !important;
     text-align: left !important;
     padding: 5px !important;
 }
@@ -826,11 +832,37 @@ header #nav-down img:hover {
         margin: 0 auto 1em;
     }
     .lg-sub-html {
-        bottom: 0% !important;
+        bottom: 10% !important;
+    }
+
+    .lg-thumb-outer {
+        display: none;
+    }
+}
+
+@media (max-height: 420px) {
+    .lg-image {
+        max-height: 65% !important;
+        max-width: 100% !important;
+    }
+    .lg-image {
+        margin-bottom: 6em;
     }
     
     .lg-thumb-outer {
         display: none;
+    }
+}
+
+@media (max-height: 320px) {
+    .lg-sub-html {
+        bottom: 0% !important;
+    }
+    .lg-sub-html p, .lg-sub-html a {
+        font-size: 0.8em !important;
+    }
+    .lg-image {
+        margin-bottom: 7em;
     }
 }
 
