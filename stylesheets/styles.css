@@ -721,6 +721,10 @@ header #nav-down img:hover {
     flex-flow: row wrap;
 }
 
+.less-than-three {
+    justify-content: space-evenly;
+}
+
 .project {
     margin-bottom: 20px;
     width: 360px;
