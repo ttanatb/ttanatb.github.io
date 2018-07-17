@@ -456,7 +456,19 @@ header #nav-down img:hover {
     box-shadow: 0px 0px 50px rgba(0,0,0,0.6);
 }
 
-#about-me p, #about-me h2, #about-me h3, #about-me li, #others p, #others h2, #others h4 {
+#intro h1 {
+    margin-bottom: 0.8em;
+    font-size: 32pt;
+}
+
+#intro h2 {
+    margin-bottom: 30pt;
+    font-size: 18pt;
+    line-height: 22pt;
+    font-weight: lighter;
+}
+
+#about-me p, #about-me h1, #about-me h2, #about-me h3, #about-me li, #others p, #others h2, #others h4 {
     color: #F6F9F8;
 }
 
@@ -467,7 +479,7 @@ header #nav-down img:hover {
 }
 
 #about-me li {
-    width: 200px;
+    width: 240px;
     height: 76px;
     padding: 5px;
     margin: 0 10px 10px 0;
@@ -487,30 +499,18 @@ header #nav-down img:hover {
     }
 }
 
-.skill-l {
-    font-weight: 800;
-    font-size: 1.2em;
-}
-
-.skill-m {
-    font-weight: 600;
-}
-
-.skill-s {
-    font-size: 0.9em;
-}
 
 .style-a-l { background-color: #4E7EAE; }
-.style-a-m { background-color: #395C7F; }
+.style-a-m { background-color: #35597A; }
 .style-a-s { background-color: #2B455F; }
 .style-b-l { background-color: #B73359; }
-.style-b-m { background-color: #862641; }
+.style-b-m { background-color: #82223C; }
 .style-b-s { background-color: #641C31; }
 .style-c-l { background-color: #6A6394; }
-.style-c-m { background-color: #554F76; }
+.style-c-m { background-color: #514A72; }
 .style-c-s { background-color: #403B59; }
 .style-d-l { background-color: #5F6369; }
-.style-d-m { background-color: #4D5258; }
+.style-d-m { background-color: #4A4D54; }
 .style-d-s { background-color: #3C4148; }
 
 /*
@@ -572,27 +572,23 @@ header #nav-down img:hover {
         flex: 1;
         width: 95px;
     }
-    
+
     .skill-l {
-        font-size: 1em;
+        font-weight: normal;
     }
-    
+
     .skill-m {
-        font-size: .9em;
-    }
-    
-    .skill-l {
-        font-size: .8em;
+        font-weight: lighter;
     }
 }
 
-#skills, header {
+header {
     position: relative;
     background-color: #F6F9F8;
 }
 
-#skills {
-    z-index: 8;
+#skills h3 {
+    font-size: 1.3em;
 }
 
 /*
