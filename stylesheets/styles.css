@@ -262,14 +262,90 @@ button.navbar-toggle:hover > span {
 */
 
 header {
-    max-height: 900px;
+/*    max-height: 900px;*/
 	height: 98vh;
-    padding-top: 190px;
-    background-repeat: no-repeat;
-    background-position: bottom left;
     z-index: 0;
-    transition: all 0.2s ease 0s;
+    display: flex;
+    align-items: center;
 }
+
+#header-corner, #header-corner-2 {
+    width: 500px;
+    height: 400px;
+    height: auto;
+    position: absolute;
+}
+
+#header-corner {
+    transform: rotate(180deg);
+    top: 0px;
+    right: 0px;
+}
+
+#header-corner-2 {
+    left: 0px;
+    bottom: 0px;
+    z-index: -120;
+}
+
+#header {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+}
+
+#header-sm {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    #header-corner {
+        top: -50px;
+    }
+    
+    #header-corner-2 {
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 767px) {
+    #header-corner {
+        top: -100px;
+    }
+    
+    #header-corner-2 {
+        bottom: -100px;
+    }
+}
+
+@media (max-width: 400px) {
+    #header {
+        display: none;
+    }
+    
+    #header-sm {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #header-corner {
+        display: none;
+    }
+    
+    #header-corner-2 {
+        bottom: -150px;
+    }
+}
+
+@media (max-height: 600px) {    
+    #header-corner-2 {
+       display: none;
+    }
+}
+/*
 
 header #nav-down {
     text-align: center;
@@ -294,32 +370,14 @@ header #nav-down img:hover {
     height: 64px;   
 }
 
-#header-corner, #header-corner-2 {
-    width: 500px;
-    height: 400px;
-    height: auto;
-    position: absolute;
-}
-
-#header-corner {
-    transform: rotate(180deg);
-    top: 0px;
-    right: 0px;
-}
-
-#header-corner-2 {
-    left: 0px;
-    bottom: 0px;
-    z-index: -120;
-}
 
 #header-wrapper {
     transition: all 1s ease 0s;
-/*    transform: rotate(-90deg);*/
+    //transform: rotate(-90deg);
 }
 
 .rotateSquare {
-/*    transform: rotate(0deg) !important;*/
+    //transform: rotate(0deg) !important;
 }
 
 #top-square, #bot-square {
@@ -332,6 +390,7 @@ header #nav-down img:hover {
     opacity: 1.0;
     top: 0px;
 }
+*/
 
 /*
 .fade-top, .fade-bot {
@@ -348,6 +407,7 @@ header #nav-down img:hover {
 }
 */
 
+/*
 #top-square {
     border-bottom: solid #292F36;
     top: 72px;
@@ -444,6 +504,9 @@ header #nav-down img:hover {
         top: -60px;
     }
 }
+
+*/
+
 #section-wrapper, #portfolio, #contact-me {
     background-color: #F1F6F4;
 }

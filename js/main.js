@@ -1,14 +1,18 @@
 $(document).ready(function() {
+    HaikuComponentEmbed_tanatb_test(
+        document.getElementById('header'),
+        {loop: false}
+    );
     $(".subFlex").lightGallery(); 
     
     //lightbox.html("<div class='subFlex'>" + lightbox.html() + "</div>");
 
-    var resize = function() {
-        var padding = $("header").innerHeight() - $("header").height();
-        $("header").css("padding-top", ($("header").innerHeight() / 2) - ($("#header-wrapper").height() / 2));
-    }
-    resize();
-    $(window).resize(resize);
+//    var resize = function() {
+//        var padding = $("header").innerHeight() - $("header").height();
+//        $("header").css("padding-top", ($("header").innerHeight() / 2) - ($("#header-wrapper").height() / 2));
+//    }
+//    resize();
+//    $(window).resize(resize);
     
 //    $("#nav-down").click(function() {
 //       $("html, body").animate({
@@ -20,28 +24,28 @@ $(document).ready(function() {
 //    $("#bot-square").addClass("fade-bot");
     
     
-    $("#top-square").delay(100).animate({
-        top: "-76px",
-        opacity: 0.0
-    }, 500, "swing");
-    
-    $("#bot-square").delay(100).animate({
-        top: "76px",
-        opacity: 0.0
-    }, 500, "swing");
-
-    $("#divider").delay(100).animate({
-        opacity: 1.0
-    }, 100, "swing");
-
-    var dividerW = "+=" + $("#top-square").outerWidth() * 1.5 + "px";
-    $("#divider").animate({
-        width: dividerW
-    }, 500, "swing");
-
-    $("#title, #description").delay(650).animate({
-        opacity: 1.0
-    }, 250, "swing");
+//    $("#top-square").delay(100).animate({
+//        top: "-76px",
+//        opacity: 0.0
+//    }, 500, "swing");
+//    
+//    $("#bot-square").delay(100).animate({
+//        top: "76px",
+//        opacity: 0.0
+//    }, 500, "swing");
+//
+//    $("#divider").delay(100).animate({
+//        opacity: 1.0
+//    }, 100, "swing");
+//
+//    var dividerW = "+=" + $("#top-square").outerWidth() * 1.5 + "px";
+//    $("#divider").animate({
+//        width: dividerW
+//    }, 500, "swing");
+//
+//    $("#title, #description").delay(650).animate({
+//        opacity: 1.0
+//    }, 250, "swing");
     
 //    $("#nav-down").delay(1500).animate({
 //        opacity:1.0,
