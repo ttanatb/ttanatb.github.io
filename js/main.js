@@ -1,3 +1,9 @@
+//Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-89382312-1');
+
 $(document).ready(function() {
     HaikuComponentEmbed_tanatb_test(
         document.getElementById('header'),
@@ -7,6 +13,7 @@ $(document).ready(function() {
     
     //lightbox.html("<div class='subFlex'>" + lightbox.html() + "</div>");
 
+    /*
 //    var resize = function() {
 //        var padding = $("header").innerHeight() - $("header").height();
 //        $("header").css("padding-top", ($("header").innerHeight() / 2) - ($("#header-wrapper").height() / 2));
@@ -60,7 +67,7 @@ $(document).ready(function() {
 //    if ($("#youtube-player") != undefined) {
 //        console.log("ASDFADdddS");
 //    }
-    
+    */
 });
 
 /*$(document).ready(function()
