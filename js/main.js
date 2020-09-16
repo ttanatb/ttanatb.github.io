@@ -9,7 +9,7 @@ $(document).ready(function() {
         document.getElementById('header'),
         {loop: false}
     );
-    $(".subFlex").lightGallery(); 
+    $("#lightgallery").lightGallery(); 
     
     //lightbox.html("<div class='subFlex'>" + lightbox.html() + "</div>");
 

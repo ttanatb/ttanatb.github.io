@@ -19,8 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="stylesheets/styles.css">
     
     <!-- Lightgallery plug-in -->
@@ -42,8 +41,8 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<img class="hidden" src="media/github-over.png" alt="Hidden to hasten load time" />
-<a id="resume" href="resume.pdf" target="_blank"><p>R&eacute;sum&eacute;</p></a>
+<!-- <img class="hidden" src="media/github-over.png" alt="Hidden to hasten load time" />
+<a id="resume" href="resume.pdf" target="_blank"><p>R&eacute;sum&eacute;</p></a> -->
 <!--
 <nav>
     <ul>
@@ -70,130 +69,108 @@
 -->
 </header>
 <section id="about-me">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div id="intro">
-                    <h1>Hello there!</h1>
-                    <h2>
-                        "My name is Tanat Boozayaangool, and I'm a <strong>graphics programmer</strong> with a passion for building mesmerizing narratives."
-                    </h2>
-                    </div>
-                <div id="portrait">
-                    <img src="media/portrait_new.png" alt="Picture of me" />
-                </div>
-            </div>
-            <div id="skills" class="col-md-8">
-                <h2>Here's what I can do:</h2>
-                <h3>Languages</h3>
-                <ul>
-                    <li class="skill-l style-a-l">C++</li>
-                    <li class="skill-l style-a-l">C#</li>
-                    <li class="skill-l style-a-l">Objective-C</li>
-                    <li class="skill-m style-a-m">JavaScript</li>        
-                    <li class="skill-m style-a-m">Swift</li>
-                </ul>
-                <h3>Frameworks & Engines</h3>
-                <ul>
-                    <li class="skill-l style-b-l">DirectX 11 & 12</li>
-                    <li class="skill-l style-b-l">OpenGL</li>
-                    <li class="skill-l style-b-l">Unity</li>
-                    <li class="skill-m style-b-m">XNA & MonoGame</li>
-                </ul>
-                <h3>VR/AR/MR Things</h3>
-                <ul>
-                    <li class="skill-l style-c-l">SteamVR
-                        (Vive/Oculus)</li>
-                    <li class="skill-l style-c-l">iOS ARKit</li>
-                    <li class="skill-m style-c-m">HoloLens</li>
-                </ul>
-                <h3>Tools & IDEs</h3>
-                <ul>
-                    <li class="skill-l style-d-l">Git & GitHub</li>
-                    <li class="skill-m style-d-m">Xcode</li>
-                    <li class="skill-m style-d-m">Visual Studio</li>
-                </ul>
-            </div>
+    <div class="flex-grid">
+        <div id="intro">
+            <h1>hey,</h1>
+            <p> I'm Tanat (he/him)</p>
+            <p>
+                in the daytime, i work at google making tools/APIs for devs on stadia
+            </p>
+            <p>
+                by night, i like making games that:
+            </p>
+            <ul>
+                <li> have a compelling artstyle </li>
+                <li> makes you think about life and stuff</li>
+                <li> have funny, haha jokes </li>
+                <li> fun, I guess? </li>
+            </ul> 
+            <p>
+                
+            </p>
+        </div>
+        <!-- <div id="portrait">
+            <img src="media/portrait_new.png" alt="Picture of me" />
+        </div> -->
+        <div id="hahafunny">
+            <img src="media/flowerfields.gif" alt="Picture of me" />
         </div>
     </div>
 </section>
-<section id="work">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="section-header">Work Experience</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-left">
-                <img src="media/work-zynga.png" alt="Words With Friends 2"/>
-                <div class="work-header">
-                    <div class="left">
-                        <h2>Zynga</h2>
-                    </div>
-                    <div class="right">
-                        <h3>(2018)</h3>
-                        <h3>iOS Engineer</h3>
-                    </div>
-                </div>
-                <ul>
-                    <li>I'm currently working on the iOS client for Words with Friends</li>
-                    <li><strong>Challenges:</strong> learning Objective-C and the software architecture at a fast pace (such that I could meaningfully contribute to the team)</li>
-                </ul>
-                <p><em>More info to come! (I still have a few weeks left in the internship)</em></p>
-            </div>
-            <div class="col-sm-right">
-                <iframe src="https://player.vimeo.com/video/226322426" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <div class="work-header">
-                    <div class="left">
-                        <h2>Bit Studio</h2>
-                    </div>
-                    <div class="right">
-                        <h3>(2017)</h3>
-                        <h3>Unity Developer</h3>
-                    </div>
-                </div>
-                <ul>
-                    <li>I worked on building an experience that uses AR to surface gameplay in VR</li>
-                    <li>I built the AR side of the project with Unity and its AR plug-in</li>
-                    <li><strong>Challenges:</strong> picking up the new tech (at the time) and communicating with my co-worker who built the VR portion with Unreal</li>
-                </ul>
-                <p><em>This project was featured at Techsauce Global Summit 2017</em></p>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 <section id="portfolio">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-            <h1 class="section-header">Here's some featured projects:</h1>
-            </div>
+        <h1> here are the games I've made recently: </h1>
+        <div class="flex-grid">
+            <iframe frameborder="0" src="https://itch.io/embed/757864?linkback=true&amp;border_width=0" width="550" height="165"><a href="https://tanatb.itch.io/building-relationships">Building Relationships by tanatb</a></iframe>
         </div>
-        <div class="row featured">
-            <div class="col-xs-12">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/F7bgDkBRn5Q?rel=0"  class="vimeo" id="youtube-player" frameborder="0" ></iframe>
-                
-                <h3>VRsus guARdian</h3>
-                <h4>Unity, C#, iOS ARKit, SteamVR</h4>
-                <h5>Description</h5>
-                <p>VRsus guARdian is a two-player, cat-and-mouse hunt, where one player with an AR tablet searches through a physical space, while another player on PC navigates a virtual world that maps to the physical one.</p>
-                
-                <h5>Role & Responsibilities</h5>
-                <p>I'm led the team throughout it's development as a producer and lead programmer. </p>
+        <div class="flex-grid">
+            <iframe frameborder="0" src="https://itch.io/embed/739258?linkback=true" width="552" height="167"><a href="https://tanatb.itch.io/sometimes">sometimes we just want someone to talk to, sometimes we don't by tanatb</a></iframe>
+        </div>
+        <h1> here are other things i've done: </h1>
+            <div>
+                <div class="proj-header">
+                    <div class="left">
+                        <h2>VRsus guARdian</h2>
+                        <h4>Unity, C#, VR, AR</h4>
+                    </div>
+                    <div class="right">
+                        <h3>(2016 - 2017)</h3>
+                        <h3>Producer, Lead Engineer</h3>
+                    </div>
+                </div>
+                <p class="description">
+                    A game that combines gameplay between VR and AR.
+                </p>
+                <ul>
+                    <li>I did a bit of procedural environment 
+                        building for AR and integration for VR</li>
+                    <li>I worked closely with artists and engineers 
+                        (and I did a lot of the team-work jazz)</li>
+                    <li>Networking was new to me prior to 
+                        the project, and I (had to) grasp Unity's HLAPI rather quickly</li>
+                    <li>Tech: <em>Unity, C#, iOS ARkit, SteamVR, Unity's HLAPI</em></li>
+                </ul>
+                <p class="flair">
+                    This game represented RIT (my school) at the RPI Game Fest.
+                </p>
+                <a href="https://scholarworks.rit.edu/frameless/vol1/iss1/21/" target="_blank">
+                    <button type="button" class="btn btn-default">Publication</button>
+                </a>
                 <a href="https://github.com/ttanatb/AR-Hack" target="_blank">
                     <button type="button" class="btn btn-primary">GitHub</button>
                 </a>
                 <a href="https://tanatbdev.wordpress.com/" target="_blank">
                     <button type="button" class="btn btn-default">Dev Blog</button>
                 </a>
-                <em>
-                    <p>This game represented RIT at the RPI Game Fest.</p>
-                </em>
             </div>
-        </div>
-        <hr />
-        <div class="row featured">
+            <br />
+            <br />
+            <div >
+                <div class="proj-header">
+                    <div class="left">
+                        <h2>Light Vox</h2>
+                        <h4>C++, DirectX 12</h4>
+                    </div>
+                    <div class="right">
+                        <h3>(2018)</h3>
+                        <h3>Lead Engineer</h3>
+                    </div>
+                </div>                  
+                    <p class="description">
+                        an almost voxel-based game engine
+                    </p>
+                    <ul>
+                        <li>it's written using DirectX 12 and general feelings of pain</li>
+                        <li>there's a bunch of multi-threading and data oriented design</li>
+                    </ul>
+                    <a href="https://github.com/ttanatb/AR-Hack" target="_blank">
+                        <button type="button" class="btn btn-primary">GitHub</button>
+                    </a>
+                </div>
+         <!--
+        <div class="row">
             <div class="col-xs-12">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/cmgzdzC_y5g?rel=0" class="vimeo" frameborder="0" ></iframe>
                 
@@ -213,15 +190,9 @@
                 </em>
             </div>
         </div>
-        <hr />
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Here's some games <small>(and a game engine)</small></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-               <div class="subFlex">
+-->
+                <h2>here's everything else, I guess:</h2>
+               <div class="flex-grid" id="lightgallery">
                     <a class="project" href="media/proj-vacuum.png" data-sub-html="#vacuum">
                         <img class="img-responsive" src="media/proj-thumbnail-vacuum.png" />
                     </a>
@@ -242,18 +213,6 @@
                         <img class="img-responsive" src="media/projgif-sandefense.gif">
                     </a>
 -->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-            <hr />
-            <h2>Here's some AR Demos:</h2>
-            </div>
-        </div>
-        <div class="row">
-           <div class="col-xs-12">
-               <div class="subFlex less-than-three">
                     <a class="project" href="media/proj-dance.png" data-sub-html="#holoDance">
                         <img class="img-responsive" src="media/proj-thumbnail-dance.png" />
                     </a>
@@ -265,46 +224,120 @@
         </div>
     </div>
 </section>
-<section id="others">
+<!-- <section id="work-and-skills">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Other things about me</h2>
-            </div>
+        <div id="skills">
+            <h1>professional stuff</h1>
+            <h2>here's what I do a lot of:</h2>
+            <ul>
+                <li class="skill-l style-a-l">C#</li>     
+                <li class="skill-l style-b-l">Unity</li>
+            </ul>
+            <h2>here's what I can also do:</h2>
+            <ul>
+                <li class="skill-l style-a-l">C++</li>
+                <li class="skill-l style-b-l">DX 11 & OpenGL</li>
+                <li class="skill-l style-b-l">Vulkan & DX12</li>
+            </ul>
+            <h2>here's what I have experience with:</h2>
+            <ul>
+                <li class="skill-l style-a-m">JavaScript</li>
+                <li class="skill-l style-a-m">Objective-C</li>
+                <li class="skill-m style-a-m">Swift</li>
+                <li class="skill-l style-c-l">VR</li>
+                <li class="skill-l style-c-l">iOS ARKit</li>
+                <li class="skill-m style-c-m">HoloLens</li>
+                <li class="skill-m style-b-m">MonoGame</li>
+            </ul>
         </div>
-        <div class="row">    
-            <div class="col-sm-6 other-stuff">
-                <img id="egf-logo" src="media/ia-logo.png"/>
-                <h4>International Ambassador</h4>
-                <p>I attended GDC (Game Developer Conference) 2017 as an International Ambassador! Our mission is to help foster game development communities in areas with little support for game development. Learn more <a href="http://www.internationalambassadors.us/" target="_blank">here</a>.
-                </p>
+        <div id="work">
+        <img src="media/work-zynga.png" alt="Words With Friends 2"/>
+        <div class="work-header">
+            <div class="left">
+                <h2>Google</h2>
+                <h4>Stadia</h4>
             </div>
-            <div class="col-sm-6 ">
-                <h4>Writing</h4>
-                <p>Check out my blog <a href="https://tanatbdev.wordpress.com/" target="_blank">here</a> and read about what I have to say about my projects and the struggles I face in AR/VR development.</p>
-                <p>I used to write <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank">bi-weekly articles</a> for Electronic Gaming Federation that explore ways to quantify Hearthstone cards and judge its effectiveness against one another. </p>
-<!--                <a href="https://www.behance.net/tanatb" target="_blank" class="btn btn-style btn-left" role="button">View More</a>-->
+            <div class="right">
+                <h3>(2019 - Present)</h3>
+                <h3>Software Engineer</h3>
             </div>
+            </div>
+            <ul>
+                <li>writes tools and APIs for developers on Stadia covering latency compensation, input, and metrics</li>
+            </ul>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-4">
-                <h4>Graphic Design</h4>
-                <p>I really enjoy using Adobe Illustrator, especially when I get money for doing so. You can view some of work through my <a href="https://www.behance.net/tanatb" target="_blank">Be&#772;hance</a>.</p>
-                <!--<img id="egf-logo" src="media/ia-logo.png"/>-->
-
+        <div>
+            <div>
+                <img src="media/wwf.gif" alt="Words With Friends 2"/>
             </div>
-            <div class="col-sm-4 col-xs-6">
-                <h4>Resident Advisor</h4>
-                <p>I overlook a bunch of students and help build a positive environment by guiding them towards appropriate resources (such as those for mental health concerns).</p>
+            <div class="work-header">
+                <div class="left">
+                    <h2>Zynga</h2>
+                    <h4>Words with Friends</h4>
+                </div>
+                <div class="right">
+                    <h3>(2018)</h3>
+                    <h3>iOS Engineer, Intern</h3>
+                </div>
             </div>
-            <div class="col-sm-4 col-xs-6">
-                <h4>Teaching Assistant</h4>
-                <p>I answer questions and guide students through classes and assignments. Classes I TA for include: Data Structures & Algorithms II and Game Design and Development I.</p>
+            <ul>
+                <li>implemented tile styles for Words With Friends 2</li>
+                <li>conducted investigation on using lottie for iOS & Android</li>
+            </ul>
+        </div>
+        <div>
+            <iframe src="https://player.vimeo.com/video/226322426" frameborder="0" 
+            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="work-header">
+                <div class="left">
+                    <h2>Bit Studio</h2>
+                </div>
+                <div class="right">
+                    <h3>(2017)</h3>
+                    <h3>Unity Developer, Intern</h3>
+                </div>
             </div>
+            <ul>
+                <li>
+                    built an AR interactive experience for 
+                    a demo that links AR, VR and Projection Mapping
+                </li>
+                <li>
+                    did the communication for the networking part of the project 
+                    (co-worker built the VR portion in Unreal)
+                </li>
+            </ul>
+            <p><em>This project was featured at Techsauce Global Summit 2017</em></p>
         </div>
     </div>
 </section>
+<section id="others">
+    <div class="container">
+        <h2>other things about me</h2>
+        <div class="flex-grid">    
+            <div >
+                <h4>International Ambassador</h4>
+                <p>I attended GDC (Game Developer Conference) 2017 as an 
+                    <a href="http://www.internationalambassadors.us/" target="_blank">International Ambassador</a>!
+                </p>
+            </div>
+            <div>
+                <h4>Graphic Design</h4>
+                <p>I made posters and promotional material for a year or so: <a href="https://www.behance.net/tanatb" target="_blank">Be&#772;hance</a>.</p>
+            </div>
+            <div>
+                <h4>Writing</h4>
+                <p>Check out my <a href="https://tanatbdev.wordpress.com/" target="_blank">blog</a>.</p>
+                <p>I used to write <a href="http://media.egfederation.com/understanding-hearthstone-2" target="_blank">bi-weekly articles</a> for Electronic Gaming Federation that explore ways to quantify Hearthstone cards and judge its effectiveness against one another. </p>
+               <a href="https://www.behance.net/tanatb" target="_blank" class="btn btn-style btn-left" role="button">View More</a>
+            </div>
+            <div>
+                <h4>I was also</h4>
+                <p>a Resident Advisor and a Teaching Assistant</p>
+            </div>
+        </div>
+    </div>
+</section> -->
 <section id="contact-me">
     <div class="container">
         <div class="row">
