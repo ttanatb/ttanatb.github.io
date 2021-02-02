@@ -667,6 +667,24 @@ p.description {
     
 }
 
+#lv-gif {
+    max-height: 294px;
+    width: auto;
+    margin: 0 auto;
+    display:block;
+}
+
+#lv-gif-container {
+    background-color: #292F36;
+}
+
+@media (max-width: 300px) {
+    #lv-gif {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /*****************/
 /* More Projects */
 /*****************/
